@@ -1,0 +1,23 @@
+.common-btn {
+  text-decoration: none;
+}
+
+.common-btn p {
+  position: relative;
+  display: inline-block;
+}
+
+.common-btn p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: currentColor; /* テキストと同じ色を使用 */
+  transition: width 0.3s ease; /* アニメーションの設定 */
+}
+
+.common-btn:hover p::after {
+  width: 100%; /* ホバー時に下線を100%の幅まで広げる */
+}
