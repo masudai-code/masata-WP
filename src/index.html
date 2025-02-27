@@ -39,17 +39,108 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/jquery.inview.min.js" defer></script>
     <script defer src="./assets/js/script.js"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
 
   <body>
-    <header></header>
+    <!-- ヘッダー-->
+    <header class="header layout-header js-header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="#">
+            <img
+              loading="lazy"
+              src="./assets/images/common/logo01.svg"
+              alt="Excite Code"
+            />
+          </a>
+        </h1>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#">top</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">about</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">service</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">works</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">news</a>
+            </li>
+            <li class="header__nav-item header__nav-item--contact">
+              <a href="#">contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- hamburger -->
+        <button class="header__hamburger js-hamburger u-mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- ドロワー -->
+        <div class="header__drawer js-drawer u-mobile">
+          <nav class="header__drawer-nav">
+            <ul class="header__drawer-nav-list">
+              <li class="header__drawer-nav-item">
+                <a href="#">top</a>
+              </li>
+              <li class="header__drawer-nav-item">
+                <a href="#">about</a>
+              </li>
+              <li class="header__drawer-nav-item">
+                <a href="#">service</a>
+              </li>
+              <li class="header__drawer-nav-item">
+                <a href="#">works</a>
+              </li>
+              <li class="header__drawer-nav-item">
+                <a href="#">news</a>
+              </li>
+              <li class="header__drawer-nav-item">
+                <a href="#">contact</a>
+              </li>
+              <li class="header__drawer-nav-item">
+                <a href="#">プライバシーポリシー</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__sns-list-wrap">
+            <ul class="header__sns-list">
+              <li class="header__sns-item">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li class="header__sns-item">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li class="header__sns-item">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <main>
-      <!-- 共通パーツ -->
+      <!-- 共通パーツ ボタン-->
       <a href="#" class="common-btn"><p>read more</p></a>
 
-      <div class="inner">
-        <p class="test">変更のテスト</p>
-      </div>
+      <!-- 共通パーツ タイトル-->
+      <h2 class="common-title common-title--right">service</h2>
+      <h2 class="common-title">works</h2>
     </main>
     <footer></footer>
   </body>

@@ -43,16 +43,16 @@
 }
 
 .common-btn p::after {
-  content: '';
+  content: "";
   position: absolute;
-  top:  rem(17);
+  top: rem(17);
   left: 0;
   width: 0;
   height: 1px;
-  background-color: currentColor; /* テキストと同じ色を使用 */
-  transition: width 0.3s ease; /* アニメーションの設定 */
+  background-color: currentColor;
+  transition: width 0.3s ease;
 }
 
 .common-btn:hover p::after {
-  width: 100%; /* ホバー時に下線を100%の幅まで広げる */
+  width: 100%;
 }

@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.common-title {
+  text-align: left;
+  font-family: $second-font-family;
+  font-size: rem(38);
+  font-weight: $bold;
+  color: $black;
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+.common-title.common-title--right {
+  @include mq("md") {
+    text-align: right;
+  }
+}
