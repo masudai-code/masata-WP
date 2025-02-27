@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.common-btn {
+  padding: rem(14) rem(24);
+  position: relative;
+  display: inline-block;
+  font-family: $third-font-family;
+  font-size: rem(14);
+  font-weight: $medium;
+  color: $navy;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.common-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: rem(9);
+  width: rem(6);
+  height: rem(6);
+  border-top: rem(1) solid $navy;
+  border-right: rem(1) solid $navy;
+  transform: translateY(-50%) rotate(45deg);
+  transition: 0.3s;
+}
+
+.common-btn:hover {
+  @include mq("md") {
+    opacity: 1;
+  }
+}
+
+.common-btn:hover::before {
+  @include mq("md") {
+    right: rem(5);
+  }
+}
