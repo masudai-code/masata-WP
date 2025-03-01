@@ -53,11 +53,17 @@
       <div class="header__inner">
         <h1 class="header__logo">
           <a href="#">
-            <img
-              loading="lazy"
-              src="./assets/images/common/logo01.svg"
-              alt="Excite Code"
-            />
+            <picture>
+              <source
+                srcset="./assets/images/common/logo01.svg"
+                media="(min-width: 768px)"
+              />
+              <img
+                loading="lazy"
+                src="./assets/images/common/logo02.svg"
+                alt="Excite Code"
+              />
+            </picture>
           </a>
         </h1>
         <nav class="header__nav u-desktop">
@@ -96,26 +102,26 @@
         <!-- ドロワー -->
         <div class="header__drawer js-drawer u-mobile">
           <nav class="header__drawer-nav">
-            <ul class="header__drawer-nav-list">
-              <li class="header__drawer-nav-item">
+            <ul class="header__drawer-list">
+              <li class="header__drawer-item">
                 <a href="#">top</a>
               </li>
-              <li class="header__drawer-nav-item">
+              <li class="header__drawer-item">
                 <a href="#">about</a>
               </li>
-              <li class="header__drawer-nav-item">
+              <li class="header__drawer-item">
                 <a href="#">service</a>
               </li>
-              <li class="header__drawer-nav-item">
+              <li class="header__drawer-item">
                 <a href="#">works</a>
               </li>
-              <li class="header__drawer-nav-item">
+              <li class="header__drawer-item">
                 <a href="#">news</a>
               </li>
-              <li class="header__drawer-nav-item">
+              <li class="header__drawer-item">
                 <a href="#">contact</a>
               </li>
-              <li class="header__drawer-nav-item">
+              <li class="header__drawer-item">
                 <a href="#">プライバシーポリシー</a>
               </li>
             </ul>
@@ -129,7 +135,7 @@
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
               </li>
               <li class="header__sns-item">
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
               </li>
             </ul>
           </div>
