@@ -29,6 +29,13 @@
   min-height: inherit;
 }
 
+.fv__wrap {
+  @include mq("md") {
+    display: flex;
+    gap: rem(101);
+  }
+}
+
 .fv__swiper,
 .swiper-slide picture,
 .swiper-slide img {
@@ -44,8 +51,11 @@
 .fv__title {
   font-size: rem(34);
   font-weight: bold;
+  margin: rem(20) rem(10) 0;
+  line-height: 1.45;
   @include mq("md") {
     font-size: rem(60);
     writing-mode: vertical-rl;
+    margin: rem(114) 0 0 0;
   }
 }

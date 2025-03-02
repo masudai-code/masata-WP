@@ -31,13 +31,13 @@ jQuery(function ($) {
 
     // FV
     const fv__swiper = new Swiper(".js-fv-swiper", {
-      direction: "vertical",
-      loop: true,
-      speed: 2000,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
+      // direction: "vertical",
+      // loop: true,
+      // speed: 2000,
+      // autoplay: {
+      //   delay: 4000,
+      //   disableOnInteraction: false,
+      // },
       allowTouchMove: false,
     });
   });
