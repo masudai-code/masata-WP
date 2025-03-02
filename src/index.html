@@ -49,21 +49,15 @@
 
   <body>
     <!-- ヘッダー-->
-    <header class="header layout-header js-header">
+    <header class="header layout-header">
       <div class="header__inner">
         <h1 class="header__logo">
           <a href="#">
-            <picture>
-              <source
-                srcset="./assets/images/common/logo01.svg"
-                media="(min-width: 768px)"
-              />
-              <img
-                loading="lazy"
-                src="./assets/images/common/logo02.svg"
-                alt="Excite Code"
-              />
-            </picture>
+            <img
+              loading="lazy"
+              src="./assets/images/common/logo01.svg"
+              alt="Excite Code"
+            />
           </a>
         </h1>
         <nav class="header__nav u-desktop">
@@ -93,7 +87,10 @@
         </nav>
 
         <!-- hamburger -->
-        <button class="header__hamburger js-hamburger u-mobile">
+        <button
+          class="header__hamburger js-hamburger u-mobile"
+          aria-label="Toggle navigation menu"
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -129,13 +126,19 @@
           <div class="header__sns-list-wrap">
             <ul class="header__sns-list">
               <li class="header__sns-item">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" aria-label="Facebook"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
               </li>
               <li class="header__sns-item">
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="Twitter"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
               </li>
               <li class="header__sns-item">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Instagram"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
               </li>
             </ul>
           </div>
