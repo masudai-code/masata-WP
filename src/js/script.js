@@ -28,5 +28,17 @@ jQuery(function ($) {
         $(".header__logo img").attr("src", "./assets/images/common/logo01.svg");
       }
     });
+
+    // FV
+    const fv__swiper = new Swiper(".js-fv-swiper", {
+      direction: "vertical",
+      loop: true,
+      speed: 2000,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      allowTouchMove: false,
+    });
   });
 });

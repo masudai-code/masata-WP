@@ -1,0 +1,51 @@
+@use "global" as *;
+
+// .fv {
+//   position: relative;
+//   z-index: 1;
+//   height: 100vh;
+//   min-height: rem(400);
+//   margin: 0 rem(10);
+// }
+
+.fv {
+  position: relative;
+  z-index: 1;
+  height: auto; /* 100vh を削除し自動高さに */
+  max-height: 480px; /* 最大480pxに制限 */
+  margin: 0 10px;
+}
+
+.fv__inner,
+.fv__swiper,
+.swiper-slide picture,
+.swiper-slide img {
+  height: 100%;
+  max-height: 480px;
+}
+
+.fv__inner {
+  height: inherit;
+  min-height: inherit;
+}
+
+.fv__swiper,
+.swiper-slide picture,
+.swiper-slide img {
+  height: inherit;
+  min-height: inherit;
+}
+
+.swiper-slide img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.fv__title {
+  font-size: rem(34);
+  font-weight: bold;
+  @include mq("md") {
+    font-size: rem(60);
+    writing-mode: vertical-rl;
+  }
+}
