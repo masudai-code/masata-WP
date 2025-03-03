@@ -21,3 +21,33 @@
 .common-btn:hover p::after {
   width: 100%; /* ホバー時に下線を100%の幅まで広げる */
 }
+
+.slide-text {
+  width: 100%;
+  overflow: hidden;
+  background-color: #333;
+  padding: 20px 0;
+}
+
+.slide-text__inner {
+  display: flex;
+  white-space: nowrap;
+  animation: slide-text 20s linear infinite;
+}
+
+.slide-text__content {
+  color: #fff;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 0 50px;
+}
+
+@keyframes slide-text {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

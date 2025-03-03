@@ -6,6 +6,7 @@
   transition: 0.5s;
   @include mq("md") {
     height: rem(81);
+    background-color: $white;
   }
 }
 

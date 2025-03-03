@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.slide-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slide-text__inner {
+  display: flex;
+  animation: loop-text 10s linear infinite;
+  margin-top: rem(28);
+  @include mq("md") {
+    margin-top: rem(60);
+  }
+}
+
+.slide-text__content {
+  display: inline-block;
+  color: $blue;
+  font-size: rem(84);
+  font-weight: $bold;
+  padding-right: rem(50);
+  line-height: 1;
+  white-space: nowrap;
+  @include mq("md") {
+    font-size: rem(150);
+  }
+}
+
+@keyframes loop-text {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
