@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .common-btn {
-  padding: rem(14) rem(24);
+  padding-right: rem(16);
   position: relative;
   display: inline-block;
   font-family: $third-font-family;
@@ -16,7 +16,7 @@
   content: "";
   position: absolute;
   top: 50%;
-  right: rem(9);
+  right: 0;
   width: rem(6);
   height: rem(6);
   border-top: rem(1) solid $navy;
@@ -26,15 +26,11 @@
 }
 
 .common-btn:hover {
-  @include mq("md") {
-    opacity: 1;
-  }
+  opacity: 1;
 }
 
 .common-btn:hover::before {
-  @include mq("md") {
-    right: rem(5);
-  }
+  right: rem(-4);
 }
 
 .common-btn p {
@@ -55,4 +51,8 @@
 
 .common-btn:hover p::after {
   width: 100%;
+}
+
+.common-btn-wrap {
+  text-align: right;
 }

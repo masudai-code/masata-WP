@@ -3,7 +3,7 @@
 .fv {
   position: relative;
   z-index: 1;
-  height: 100vh;
+  height: 100%;
   min-height: rem(480);
   margin: 0 rem(10);
   @include mq("md") {

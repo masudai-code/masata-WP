@@ -1,0 +1,52 @@
+@use "global" as *;
+
+.about__wrap {
+  @include mq("md") {
+    display: flex;
+    gap: rem(60);
+  }
+}
+
+.about__image {
+  width: 100%;
+}
+
+.about__image img {
+  width: 100%;
+  aspect-ratio: 335/292;
+  object-fit: cover;
+  @include mq("md") {
+    aspect-ratio: 550/480;
+  }
+}
+
+.about__content {
+  margin-top: rem(30);
+  @include mq("md") {
+    margin-top: rem(70);
+    max-width: rem(490);
+    width: 100%;
+  }
+}
+
+.about__title {
+  font-size: rem(14);
+  font-weight: bold;
+  font-family: $second-font-family;
+}
+
+.about__text {
+  font-size: rem(14);
+  margin-top: rem(30);
+  line-height: 2.3;
+  @include mq("md") {
+    margin-top: rem(40);
+    font-size: rem(16);
+    line-height: calc(38 / 16);
+  }
+}
+
+.about__btn-wrap {
+  text-align: right;
+  margin-top: rem(33);
+}
