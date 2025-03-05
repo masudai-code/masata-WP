@@ -56,3 +56,17 @@
 .common-btn-wrap {
   text-align: right;
 }
+
+.common-btn.common-btn--box {
+  padding: rem(14) rem(39) rem(14) rem(23);
+  border: rem(1) solid $navy;
+  border-radius: rem(5);
+}
+
+.common-btn.common-btn--box:before {
+  right: rem(25);
+}
+
+.common-btn.common-btn--box:hover::before {
+  right: rem(18);
+}

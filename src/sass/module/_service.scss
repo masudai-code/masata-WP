@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.service__list {
+  margin-top: rem(29);
+  @include mq("md") {
+    margin-top: rem(55);
+  }
+}
+
+.service__title {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.service__title.animate {
+  opacity: 1;
+  transform: translateX(0);
+}

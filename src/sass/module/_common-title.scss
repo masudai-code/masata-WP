@@ -8,6 +8,9 @@
   color: $black;
   line-height: 1;
   text-transform: capitalize;
+  @include mq("md") {
+    font-size: rem(70);
+  }
 }
 
 .common-title.common-title--right {
