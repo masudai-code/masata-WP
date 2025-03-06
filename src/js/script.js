@@ -48,7 +48,7 @@ jQuery(function ($) {
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
         // 要素が画面内に現れるタイミング（＋余裕を100pxで設定）
-        if (scroll > position - windowHeight + 100) {
+        if (scroll > position - windowHeight + 110) {
           $(this).addClass("animate");
         }
       });
