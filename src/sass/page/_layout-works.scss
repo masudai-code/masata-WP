@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.layout-works {
+  background-color: $gray3;
+  margin-top: rem(80);
+  padding-top: rem(60);
+  @include mq("md") {
+    margin-top: rem(120);
+    padding-top: rem(120);
+  }
+}

@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.works-list {
+  background-color: $white;
+}
+
+.works-list__item a {
+  display: flex;
+}
+
+.works-list__item-image {
+  width: 100%;
+}
+
+.works-list__item-image img {
+  width: 100%;
+  aspect-ratio: 120/90;
+  object-fit: cover;
+}
+
+.works-list__item-content {
+}
+
+.works-list__item-category {
+}
+
+.works-list__item-title {
+}
+
+.works-list__item-date {
+}
