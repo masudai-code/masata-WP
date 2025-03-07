@@ -1,6 +1,10 @@
 @use "global" as *;
 
-.works__list{
-  margin-top: rem(20);
-  padding-top: rem(30);
+.works__list {
+  margin-top: rem(30);
+  padding: rem(30) rem(40);
+  @include mq("md") {
+    margin-top: rem(57);
+    padding: rem(50) rem(40);
+  }
 }

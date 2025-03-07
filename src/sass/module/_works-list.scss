@@ -2,10 +2,19 @@
 
 .works-list {
   background-color: $white;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  @include mq("md") {
+    margin: initial;
+  }
 }
 
 .works-list__item a {
   display: flex;
+  gap: rem(18);
+  @include mq("md") {
+    gap: rem(50);
+  }
 }
 
 .works-list__item-image {
@@ -16,16 +25,67 @@
   width: 100%;
   aspect-ratio: 120/90;
   object-fit: cover;
+  @include mq("md") {
+    aspect-ratio: 290/229;
+  }
 }
 
 .works-list__item-content {
 }
 
 .works-list__item-category {
+  font-size: rem(10);
+  color: $gray;
+  font-weight: $medium;
+  background-color: $gray4;
+  padding: rem(4) rem(15);
+  min-width: rem(80);
+  width: fit-content;
+  @include mq("md") {
+    font-size: rem(11);
+    padding: rem(4) rem(18);
+  }
 }
 
 .works-list__item-title {
+  font-size: rem(14);
+  font-weight: $medium;
+  line-height: calc(28 / 14);
+  margin-top: rem(12);
+  min-width: rem(157);
+  @include mq("md") {
+    margin-top: rem(30);
+    font-size: rem(24);
+  }
+}
+
+.works-list__item-text {
+  @include mq("md") {
+    position: relative;
+    line-height: calc(38 / 16);
+    margin-top: rem(36);
+    color: $gray;
+    overflow: hidden;
+    height: 4.75em;
+  }
+}
+
+.works-list__item-text::after {
+  content: "...";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: $gray;
+  padding-left: 4px;
 }
 
 .works-list__item-date {
+  font-size: rem(10);
+  color: $gray2;
+  font-weight: bold;
+  margin-top: rem(15);
+  @include mq("md") {
+    font-size: rem(12);
+    margin-top: rem(17);
+  }
 }

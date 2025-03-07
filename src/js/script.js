@@ -53,5 +53,25 @@ jQuery(function ($) {
         }
       });
     });
+
+    // works-list__item-titleの文字数を全角24文字(半角45文字)に制限
+    document.querySelectorAll(".works-list__item-title").forEach(function (el) {
+      const text = el.textContent;
+      if (text.length > 45) {
+        el.textContent = text.slice(0, 45) + "...";
+      }
+    });
+
+    // works__title左から右へ出現
+    gsap.from(".works__title", {
+      x: -100, // 開始位置（左に100px）
+      opacity: 0, // 開始時は透明
+      duration: 1, // アニメーション時間（秒）
+      scrollTrigger: {
+        trigger: ".works", // アニメーション開始のトリガー要素
+        start: "top 110px", // アニメーション開始位置
+        markers: true, // マーカー表示
+      },
+    });
   });
 });
