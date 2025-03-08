@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.news {
+}
+
+.news__inner {
+  padding-right: rem(40);
+}
+
+.news__wrapper {
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.news__sidebar {
+}
+
+.news__title {
+}
+
+.news__menu {
+  display: grid;
+  gap: rem(15);
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: rem(40);
+  @include mq("md") {
+    padding-top: rem(45);
+  }
+}

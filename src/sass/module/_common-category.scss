@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.common-category {
+  font-size: rem(10);
+  color: $gray;
+  font-weight: $medium;
+  background-color: $gray4;
+  padding: rem(4) rem(15);
+  min-width: rem(80);
+  width: fit-content;
+  @include mq("md") {
+    font-size: rem(11);
+    padding: rem(4) rem(18);
+  }
+}
+
+.common-category.common-category--bgWhite {
+  background-color: $white;
+  color: $gray;
+}

@@ -366,7 +366,7 @@
                     />
                   </div>
                   <div class="works-list__item-content">
-                    <p class="works-list__item-category">修理・整備</p>
+                    <p class="works-list__item-category common-category">修理・整備</p>
                     <p class="works-list__item-title">
                       車のドアが開けられなくなった｜ドアロックの交換と修理方法について解説します。
                     </p>
@@ -392,7 +392,7 @@
                     />
                   </div>
                   <div class="works-list__item-content">
-                    <p class="works-list__item-category">修理・整備</p>
+                    <p class="works-list__item-category common-category">修理・整備</p>
                     <p class="works-list__item-title">
                       愛車のリアバンパーに傷がついた｜板金修理と塗装できれいに修復する方法を解説します。
                     </p>
@@ -418,7 +418,7 @@
                     />
                   </div>
                   <div class="works-list__item-content">
-                    <p class="works-list__item-category">販売サポート</p>
+                    <p class="works-list__item-category common-category">販売サポート</p>
                     <p class="works-list__item-title">
                       はじめて輸入車の購入を検討中のお客様｜憧れのBMWを購入するためのポイントを解説します。
                     </p>
@@ -446,42 +446,53 @@
       <!-- news -->
       <section class="news layout-news">
         <div class="news__inner inner">
-          <div class="news__sidebar">
-            <div class="news__title">
-              <h2 class="common-title js-news-title">news</h2>
+          <div class="news__wrapper">
+            <div class="news__sidebar">
+              <div class="news__title">
+                <h2 class="common-title js-news-title">news</h2>
+              </div>
+              <ul class="news__menu news-menu">
+                <li
+                  class="news-menu__item js-news-menu is-active"
+                  data-number="tab01"
+                >
+                  すべてのお知らせ
+                </li>
+                <li class="news-menu__item js-news-menu" data-number="tab02">
+                  トピックス
+                </li>
+                <li class="news-menu__item js-news-menu" data-number="tab03">
+                  イベント・キャンペーン
+                </li>
+                <li class="news-menu__item js-news-menu" data-number="tab04">
+                  入庫車情報
+                </li>
+              </ul>
             </div>
-            <ul class="news__menu">
-              <li
-                class="news__menu-item js-news-menu is-active"
-                data-number="tab01"
-              >
-                すべてのお知らせ
-              </li>
-              <li class="news__menu-item js-news-menu" data-number="tab02">
-                トピックス
-              </li>
-              <li class="news__menu-item js-news-menu" data-number="tab03">
-                イベント・キャンペーン
-              </li>
-              <li class="news__menu-item js-news-menu" data-number="tab04">
-                入庫車情報
-              </li>
-            </ul>
-          </div>
-          <div class="news__content">
-            <ul class="news__list">
-              <li class="news__item">
-                <a href="#">
-                  <div class="news__meta">
-                    <time
-                      datetime="2022-08-20"
-                      class="works-list__item-date common-date"
-                      >2022.08.20</time
-                    >
-                  </div>
-                </a>
-              </li>
-            </ul>
+            <div class="news__content">
+              <ul class="news__list news-list">
+                <li class="news-list__item">
+                  <a href="#">
+                    <div class="news-list__meta">
+                      <time
+                        datetime="2022-09-02"
+                        class="news-list__date common-date"
+                        >2022.09.02</time
+                      >
+                      <ul class="news-list__categories">
+                        <li class="news-list__category common-category common-category--bgWhite">トピックス</li>
+                        <li class="news-list__category common-category common-category--bgWhite">
+                          イベント・キャンペーン
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="news-list__text">
+                      2022年10月8日・9日・10日の3日間、試乗車フェアを開催します
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.layout-news {
+  background-color: $gray3;
+  padding-top: rem(80);
+  @include mq("md") {
+    padding-top: rem(120);
+  }
+}

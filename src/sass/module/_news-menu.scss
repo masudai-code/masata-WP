@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.news-menu__item {
+  font-size: rem(12);
+  font-weight: $medium;
+  color: $gray2;
+  @include mq("md") {
+    font-size: rem(14);
+  }
+}
+
+.news-menu__item.is-active {
+  font-size: rem(12);
+  color: $black;
+  @include mq("md") {
+    font-size: rem(14);
+  }
+}
