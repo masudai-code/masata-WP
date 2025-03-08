@@ -1,11 +1,18 @@
 @use "global" as *;
 
 .works-list {
-  background-color: $white;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+  display: grid;
+  gap: rem(30);
   @include mq("md") {
-    margin: initial;
+    gap: rem(50);
+  }
+}
+
+.works-list__item {
+  border-bottom: rem(1) solid $gray5;
+  padding-bottom: rem(30);
+  @include mq("md") {
+    padding-bottom: rem(50);
   }
 }
 
@@ -30,9 +37,6 @@
   }
 }
 
-.works-list__item-content {
-}
-
 .works-list__item-category {
   font-size: rem(10);
   color: $gray;
@@ -48,6 +52,8 @@
 }
 
 .works-list__item-title {
+  position: relative;
+  display: inline-block;
   font-size: rem(14);
   font-weight: $medium;
   line-height: calc(28 / 14);
@@ -57,6 +63,24 @@
     margin-top: rem(30);
     font-size: rem(24);
   }
+}
+
+.works-list__item-title::after {
+  content: "";
+  position: absolute;
+  bottom: rem(-2); /* 必要に応じて調整 */
+  left: 0;
+  width: 100%;
+  height: rem(1); /* 下線の太さ */
+  background-color: $black; /* 下線の色。お好みで変更 */
+  transform: scaleX(0); /* 初期状態は縮小 */
+  transform-origin: left; /* 左側から伸びるように */
+  transition: transform 0.3s ease; /* アニメーションの速度とイージング */
+}
+
+/* works-list__itemにホバーした際にworks-list__item-titleの下線をアニメーションで表示 */
+.works-list__item:hover .works-list__item-title::after {
+  transform: scaleX(1);
 }
 
 .works-list__item-text {
@@ -86,6 +110,6 @@
   margin-top: rem(15);
   @include mq("md") {
     font-size: rem(12);
-    margin-top: rem(17);
+    margin-top: rem(20);
   }
 }

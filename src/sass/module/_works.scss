@@ -1,10 +1,19 @@
 @use "global" as *;
 
-.works__list {
+.works__list-wrapper {
+  background-color: $white;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
   margin-top: rem(30);
-  padding: rem(30) rem(40);
+  padding: rem(30) rem(40) 0 rem(40);
   @include mq("md") {
+    margin: initial;
     margin-top: rem(57);
-    padding: rem(50) rem(40);
+    padding: rem(50) rem(40) 0 rem(40);
   }
+}
+
+.works__btn-wrap {
+  text-align: right;
+  margin-top: rem(41);
 }
