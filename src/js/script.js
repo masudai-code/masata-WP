@@ -72,28 +72,9 @@ jQuery(function ($) {
       duration: 1, // アニメーション時間（秒）
       scrollTrigger: {
         trigger: ".works", // アニメーション開始のトリガー要素
-        start: "top 70%", // アニメーション開始位置
+        start: "top 110px", // アニメーション開始位置
+        markers: true, // マーカー表示
       },
     });
-
-    // works-list__itemを上からふわっと出現
-    gsap.fromTo(
-      ".works__list", // アニメーションさせる要素
-      {
-        y: -100, // アニメーション開始前の縦位置(下に100px)
-        autoAlpha: 0, // アニメーション開始前は透明
-      },
-      {
-        y: 0, // アニメーション後の縦位置(上に100px)
-        autoAlpha: 1, // アニメーション後に出現(透過率0)
-        duration: 1, // アニメーションの時間（必要に応じて調整）
-        ease: "power2.out",
-        stagger: 0.2, // 各要素のアニメーション開始を0.2秒ずつずらす
-        scrollTrigger: {
-          trigger: ".works__list", // アニメーションが始まるトリガーとなる要素
-          start: "top 70%", // アニメーションの開始位置
-        },
-      }
-    );
   });
 });
