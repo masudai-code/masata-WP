@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.common-date {
+  font-size: rem(10);
+  color: $gray2;
+  font-weight: bold;
+  @include mq("md") {
+    font-size: rem(12);
+  }
+}

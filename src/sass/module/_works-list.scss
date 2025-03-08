@@ -104,12 +104,8 @@
 }
 
 .works-list__item-date {
-  font-size: rem(10);
-  color: $gray2;
-  font-weight: bold;
   margin-top: rem(15);
   @include mq("md") {
-    font-size: rem(12);
     margin-top: rem(20);
   }
 }

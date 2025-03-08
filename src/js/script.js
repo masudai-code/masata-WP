@@ -73,7 +73,6 @@ jQuery(function ($) {
       scrollTrigger: {
         trigger: ".works", // アニメーション開始のトリガー要素
         start: "top 70%", // アニメーション開始位置
-        markers: true, // マーカー表示
       },
     });
 
@@ -93,7 +92,6 @@ jQuery(function ($) {
         scrollTrigger: {
           trigger: ".works__list", // アニメーションが始まるトリガーとなる要素
           start: "top 70%", // アニメーションの開始位置
-          markers: true, // マーカー表示
         },
       }
     );
