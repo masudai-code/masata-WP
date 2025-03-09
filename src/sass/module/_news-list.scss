@@ -1,6 +1,21 @@
 @use "global" as *;
 
 .news-list__item {
+  padding: rem(20) 0;
+  border-bottom: rem(1) solid $gray5;
+  border-top: rem(1) solid $gray5;
+  @include mq("md") {
+    padding: rem(30) 0;
+  }
+}
+
+.news-list__item:first-child {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+  }
 }
 
 .news-list__meta {
@@ -8,6 +23,8 @@
 }
 
 .news-list__date {
+  display: flex;
+  align-items: center;
 }
 
 .common-date {
@@ -15,10 +32,16 @@
 
 .news-list__categories {
   display: flex;
+  margin-left: rem(12);
+  gap: rem(6);
 }
 
 .news-list__category {
 }
 
 .news-list__text {
+  font-size: rem(14);
+  font-weight: $medium;
+  margin-top: rem(20);
+  line-height: calc(28 / 14);
 }

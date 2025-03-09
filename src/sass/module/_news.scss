@@ -4,12 +4,13 @@
 }
 
 .news__inner {
-  padding-right: rem(40);
+  padding: 0 rem(40);
 }
 
 .news__wrapper {
   @include mq("md") {
     display: flex;
+    gap: rem(90);
   }
 }
 
@@ -20,11 +21,22 @@
 }
 
 .news__menu {
-  display: grid;
-  gap: rem(15);
-  grid-template-columns: repeat(2, 1fr);
-  padding-top: rem(40);
+  margin: rem(40) 0 0 rem(34);
   @include mq("md") {
-    padding-top: rem(45);
+    margin: rem(45) 0 0 rem(20);
   }
+}
+
+.news__content {
+  @include mq("md") {
+    border-left: rem(1) solid $gray5;
+    padding-left: rem(60);
+    width: 100%;
+    max-width: rem(836);
+  }
+}
+
+.news__btn-wrap {
+  text-align: right;
+  margin-top: rem(45);
 }
