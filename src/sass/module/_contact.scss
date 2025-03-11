@@ -1,0 +1,112 @@
+@use "global" as *;
+
+.contact__wrap {
+  @include mq("md") {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.contact__content {
+  padding: rem(80) 0;
+  background-color: $blue;
+  text-align: center;
+  width: 100%;
+  @include mq("md") {
+    padding: rem(81) 0 rem(85) rem(175);
+    max-width: rem(620);
+    text-align: left;
+  }
+}
+
+.contact__text {
+  font-size: rem(14);
+  color: $white;
+  line-height: calc(28 / 14);
+  @include mq("md") {
+    font-size: rem(18);
+    line-height: calc(30 / 18);
+  }
+}
+
+.contact__btn-list {
+  margin-top: rem(32);
+  @include mq("md") {
+    margin-top: rem(25);
+  }
+}
+
+.contact__btn-item {
+}
+
+.contact__btn-wrap {
+  margin-top: rem(20);
+}
+
+.contact_btn {
+  padding: rem(19) 0 rem(18) 0;
+  display: inline-block;
+  color: $white;
+  line-height: 1;
+  border: rem(1) solid $white;
+  max-width: rem(227);
+  width: 100%;
+  text-align: center;
+  border-radius: rem(7);
+  @include mq("md") {
+    font-size: rem(22);
+    max-width: rem(235);
+  }
+}
+
+.contact_btn span {
+  margin-left: rem(10);
+  @include mq("md") {
+    margin-left: rem(16);
+  }
+}
+
+.contact_tel-btn {
+  padding: rem(19) 0 rem(18) 0;
+  display: inline-block;
+  color: $white;
+  line-height: 1;
+  border: rem(1) solid $white;
+  max-width: rem(227);
+  width: 100%;
+  text-align: center;
+  border-radius: rem(7);
+  @include mq("md") {
+    font-size: rem(22);
+    max-width: rem(235);
+  }
+}
+
+.contact_tel-btn span {
+  margin-left: rem(10);
+  @include mq("md") {
+    margin-left: rem(16);
+  }
+}
+
+.contact__hours {
+  margin-top: rem(10);
+  font-size: rem(12);
+  color: $white;
+  @include mq("md") {
+    margin-top: rem(22);
+    font-size: rem(14);
+  }
+}
+
+.contact__img {
+  width: 100%;
+}
+
+.contact__img img {
+  aspect-ratio: 375/240;
+  object-fit: cover;
+  @include mq("md") {
+    aspect-ratio: 820/446;
+  }
+}

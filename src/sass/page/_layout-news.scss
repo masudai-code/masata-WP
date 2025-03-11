@@ -2,8 +2,8 @@
 
 .layout-news {
   background-color: $gray3;
-  padding-top: rem(80);
+  padding: rem(80) 0 rem(73) 0;
   @include mq("md") {
-    padding-top: rem(120);
+    padding: rem(120) 0;
   }
 }
