@@ -27,9 +27,6 @@
   align-items: center;
 }
 
-.common-date {
-}
-
 .news-list__categories {
   display: flex;
   margin-left: rem(12);
@@ -40,8 +37,31 @@
 }
 
 .news-list__text {
+  position: relative;
   font-size: rem(14);
   font-weight: $medium;
   margin-top: rem(20);
   line-height: calc(28 / 14);
+  display: inline-block;
+  @include mq("md") {
+    font-size: rem(16);
+    margin-top: rem(26);
+  }
+}
+
+.news-list__text::after {
+  content: "";
+  position: absolute;
+  bottom: rem(-2); /* 必要に応じて調整 */
+  left: 0;
+  width: 100%;
+  height: rem(1); /* 下線の太さ */
+  background-color: $black; /* 下線の色。お好みで変更 */
+  transform: scaleX(0); /* 初期状態は縮小 */
+  transform-origin: left; /* 左側から伸びるように */
+  transition: transform 0.3s ease; /* アニメーションの速度とイージング */
+}
+
+.news-list__item:hover .news-list__text::after {
+  transform: scaleX(1);
 }
