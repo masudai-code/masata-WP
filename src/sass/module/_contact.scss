@@ -43,7 +43,7 @@
   margin-top: rem(20);
 }
 
-.contact_btn {
+.contact__btn {
   padding: rem(19) 0 rem(18) 0;
   display: inline-block;
   color: $white;
@@ -53,20 +53,58 @@
   width: 100%;
   text-align: center;
   border-radius: rem(7);
+  position: relative;
+  transition: 0.3s;
   @include mq("md") {
     font-size: rem(22);
     max-width: rem(235);
   }
 }
 
-.contact_btn span {
+.contact__btn i {
+  position: relative;
+  z-index: 1;
+}
+
+.contact__btn:hover {
+  opacity: 1;
+}
+
+.contact__btn span {
   margin-left: rem(10);
+  position: relative;
+  z-index: 1;
   @include mq("md") {
     margin-left: rem(16);
   }
 }
 
-.contact_tel-btn {
+.contact__btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  transform: scaleX(0);
+  transition: 0.3s;
+  transition-property: transform;
+  transform-origin: right;
+}
+
+.contact__btn:hover i,
+.contact__btn:hover span {
+  color: $blue;
+}
+
+.contact__btn:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.contact__tel-btn {
   padding: rem(19) 0 rem(18) 0;
   display: inline-block;
   color: $white;
@@ -82,7 +120,7 @@
   }
 }
 
-.contact_tel-btn span {
+.contact__tel-btn span {
   margin-left: rem(10);
   @include mq("md") {
     margin-left: rem(16);

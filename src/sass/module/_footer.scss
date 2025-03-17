@@ -1,0 +1,111 @@
+@use "global" as *;
+
+.footer {
+  background-color: $navy2;
+  padding: rem(90) 0 rem(30);
+  @include mq("md") {
+    padding: rem(53) 0 rem(54);
+  }
+}
+
+.footer__inner {
+  margin: auto;
+  padding: 0 rem(25);
+  max-width: rem(325);
+  width: 100%;
+  @include mq("md") {
+    padding: 0 rem(10) 0 rem(40);
+    max-width: rem(1180);
+  }
+}
+
+.footer__wrap {
+  display: flex;
+  flex-direction: column-reverse;
+  @include mq("md") {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer__left {
+  margin-top: rem(50);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.footer__brand {
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.footer__logo {
+  max-width: rem(114);
+  width: 100%;
+  @include mq("md") {
+    max-width: rem(258);
+  }
+}
+
+.footer__sns-list-wrap {
+  margin-top: rem(50);
+  @include mq("md") {
+    margin-top: 0;
+    margin-left: rem(46);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.footer__sns-list {
+  display: flex;
+}
+
+.footer__sns-list-wrap i {
+  color: $white;
+  font-size: rem(22);
+}
+
+.footer__sns-list .footer__sns-item a {
+  padding: 0 rem(10);
+}
+
+.footer__sns-list .footer__sns-item:first-child a {
+  padding-left: 0;
+}
+
+.footer__copy {
+  font-size: rem(12);
+  color: $white;
+  font-family: $third-font-family;
+  margin-top: rem(50);
+  @include mq("md") {
+    margin-top: rem(20);
+  }
+}
+
+.footer__right {
+}
+
+.footer__nav {
+}
+
+.footer__nav-list {
+}
+
+.footer__nav-item a {
+  display: block;
+  padding: rem(12) 0;
+  font-size: rem(14);
+  line-height: 1;
+  color: $white;
+  text-transform: uppercase;
+  font-family: $third-font-family;
+  @include mq("md") {
+    font-size: rem(16);
+    padding: rem(10) 0;
+  }
+}
