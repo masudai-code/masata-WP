@@ -26,12 +26,17 @@
 
 .fv-swiper {
   position: relative;
+  height: 100%;
 }
 
 .fv-swiper .swiper-wrapper {
   margin: auto;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+}
+
+.fv-swiper .swiper {
+  height: 100%;
 }
 
 .fv__img {
