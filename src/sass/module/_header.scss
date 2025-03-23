@@ -14,7 +14,6 @@
   padding-right: rem(30);
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: inherit;
   @include mq("md") {
     padding-right: 0;
@@ -30,7 +29,6 @@
     max-width: rem(258);
     width: 100%;
     height: rem(180);
-    margin-top: rem(99);
   }
 }
 
