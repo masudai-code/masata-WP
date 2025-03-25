@@ -13,6 +13,9 @@
 }
 
 .service-list__item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .service-list__item-wrap {
@@ -58,7 +61,6 @@
 }
 
 .service-list__content {
-  margin-top: rem(20);
   @include mq("md") {
     width: 100%;
     max-width: rem(335);
@@ -68,14 +70,15 @@
 .service-list__item-text {
   font-size: rem(14);
   line-height: calc(32 / 14);
+  margin:  rem(20) 0;
   @include mq("md") {
     font-size: rem(16);
     line-height: calc(38 / 16);
   }
 }
 
-.service-list__btn-wrap {
-  margin-top: rem(20);
+.service-list__btn-wrap a {
+  margin-top: auto;
   text-align: right;
 }
 
