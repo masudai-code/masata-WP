@@ -1,5 +1,9 @@
 @use "global" as *;
 
+.service {
+  overflow-x: hidden;
+}
+
 .service__list {
   margin-top: rem(29);
   @include mq("md") {
