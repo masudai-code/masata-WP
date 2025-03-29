@@ -10,7 +10,7 @@
 .slide-text__inner {
   display: flex;
   animation: loop-text 10s linear infinite;
-  margin-top: rem(39);
+  margin-top: rem(49);
   @include mq("md") {
     margin-top: rem(60);
   }

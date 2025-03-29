@@ -16,6 +16,10 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  @include mq("md") {
+    width: 100%;
+    max-width: rem(355);
+  }
 }
 
 .service-list__item-wrap {
@@ -70,15 +74,14 @@
 .service-list__item-text {
   font-size: rem(14);
   line-height: calc(32 / 14);
-  margin:  rem(20) 0;
+  margin: rem(20) 0;
   @include mq("md") {
     font-size: rem(16);
     line-height: calc(38 / 16);
   }
 }
 
-.service-list__btn-wrap a {
-  margin-top: auto;
+.service-list__btn-wrap {
   text-align: right;
 }
 

@@ -26,7 +26,7 @@
 
 .fv-swiper {
   position: relative;
-  height: calc(100% - (rem(20) + rem(49) + rem(69)));
+  height: calc(100% - (rem(20) + rem(90)));
   @include mq("md") {
     height: auto;
   }
