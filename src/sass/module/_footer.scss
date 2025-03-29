@@ -2,7 +2,7 @@
 
 .footer {
   background-color: $navy2;
-  padding: rem(90) 0 rem(30);
+  padding: rem(50) 0 rem(30);
   @include mq("md") {
     padding: rem(53) 0 rem(54);
   }
@@ -81,24 +81,15 @@
   font-size: rem(12);
   color: $white;
   font-family: $third-font-family;
-  margin-top: rem(50);
+  margin-top: rem(45);
   @include mq("md") {
     margin-top: rem(20);
   }
 }
 
-.footer__right {
-}
-
-.footer__nav {
-}
-
-.footer__nav-list {
-}
-
 .footer__nav-item a {
   display: block;
-  padding: rem(12) 0;
+  padding: rem(13) 0;
   font-size: rem(14);
   line-height: 1;
   color: $white;
