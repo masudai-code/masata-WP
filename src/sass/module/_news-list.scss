@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .news-list__item {
-  padding: rem(20) 0;
+  padding: rem(18.7) 0;
   border-bottom: rem(1) solid $gray5;
   border-top: rem(1) solid $gray5;
   @include mq("md") {
@@ -10,7 +10,7 @@
 }
 
 .news-list__item:first-child {
-  margin-top: rem(40);
+  margin-top: rem(37);
   @include mq("md") {
     margin-top: 0;
     padding-top: 0;
@@ -33,14 +33,11 @@
   gap: rem(6);
 }
 
-.news-list__category {
-}
-
 .news-list__text {
   position: relative;
   font-size: rem(14);
   font-weight: $medium;
-  margin-top: rem(20);
+  margin-top: rem(21);
   line-height: calc(28 / 14);
   display: inline-block;
   @include mq("md") {

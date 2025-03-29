@@ -1,12 +1,5 @@
 @use "global" as *;
 
-.news {
-}
-
-.news__inner {
-  padding: 0 rem(40);
-}
-
 .news__wrapper {
   @include mq("md") {
     display: flex;
@@ -14,20 +7,15 @@
   }
 }
 
-.news__sidebar {
-}
-
-.news__title {
-}
-
 .news__menu {
-  margin: rem(40) 0 0 rem(34);
+  margin: rem(49) 0 0 rem(34);
   @include mq("md") {
     margin: rem(45) 0 0 rem(20);
   }
 }
 
 .news__content {
+  padding:  0 rem(20);
   @include mq("md") {
     border-left: rem(1) solid $gray5;
     padding-left: rem(60);
@@ -38,5 +26,5 @@
 
 .news__btn-wrap {
   text-align: right;
-  margin-top: rem(45);
+  margin-top: rem(39);
 }
