@@ -12,7 +12,7 @@
   height: inherit;
   min-height: inherit;
   @include mq(md) {
-    padding: 0 rem(80);
+    padding: 0 rem(66) 0 rem(80);
   }
 }
 
@@ -20,7 +20,8 @@
   height: inherit;
   @include mq("md") {
     display: flex;
-    gap: rem(101);
+    // gap: rem(101);
+    gap: rem(86);
   }
 }
 
@@ -59,7 +60,7 @@
 .fv__title {
   margin: rem(20) rem(10) 0;
   @include mq("md") {
-    margin: rem(194) 0 0 0;
+    margin: rem(196) 0 0 0;
   }
 }
 
@@ -70,5 +71,6 @@
   @include mq("md") {
     font-size: rem(60);
     writing-mode: vertical-rl;
+    letter-spacing: 0.06em;
   }
 }
