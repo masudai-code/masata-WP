@@ -49,4 +49,7 @@
 .about__btn-wrap {
   text-align: right;
   margin-top: rem(33);
+  @include mq("md") {
+    margin-top: rem(33);
+  }
 }

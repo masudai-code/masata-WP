@@ -41,8 +41,8 @@
 .service-list__title-wrap {
   position: absolute;
   top: 50%;
-  left: 32%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
+  margin-left: rem(30);
   z-index: 2;
 }
 

@@ -12,7 +12,7 @@
   border-bottom: rem(1) solid $gray5;
   padding-bottom: rem(30);
   @include mq("md") {
-    padding-bottom: rem(50);
+    padding-bottom: rem(49);
   }
 }
 
@@ -58,8 +58,9 @@
   margin-bottom: rem(14);
   @include mq("md") {
     font-size: rem(11);
-    padding: rem(4) rem(18);
-    margin-bottom: rem(33);
+    padding: rem(5) rem(18);
+    margin-bottom: rem(27);
+    line-height: 1;
   }
 }
 
@@ -87,7 +88,7 @@
   @include mq("md") {
     position: relative;
     line-height: calc(38 / 16);
-    margin-top: rem(36);
+    margin-top: rem(22);
     color: $gray;
     overflow: hidden;
     height: 4.75em;
@@ -107,6 +108,6 @@
   display: block;
   margin-top: rem(10);
   @include mq("md") {
-    margin-top: rem(20);
+    margin-top: rem(18);
   }
 }
