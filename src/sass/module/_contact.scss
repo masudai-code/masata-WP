@@ -1,8 +1,9 @@
 @use "global" as *;
 
 .contact__wrap {
+  display: flex;
+  flex-direction: column;
   @include mq("md") {
-    display: flex;
     flex-direction: row-reverse;
   }
 }
@@ -13,7 +14,7 @@
   text-align: center;
   width: 100%;
   @include mq("md") {
-    padding: rem(81) 0 rem(85) rem(175);
+    padding: rem(81) 0 rem(81) rem(175);
     max-width: rem(620);
     text-align: left;
   }
@@ -38,6 +39,9 @@
 
 .contact__btn-wrap {
   margin-top: rem(19);
+  @include mq("md") {
+    margin-top: rem(21);
+  }
 }
 
 .contact__btn {
@@ -136,11 +140,20 @@
 
 .contact__img {
   width: 100%;
+  display: block;
+  line-height: 0;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .contact__img img {
+  width: 100%;
+  display: block;
   aspect-ratio: 375/240;
   object-fit: cover;
+  margin: 0;
+  padding: 0;
   @include mq("md") {
     aspect-ratio: 820/446;
   }
