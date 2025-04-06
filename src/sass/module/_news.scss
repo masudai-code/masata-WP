@@ -7,18 +7,24 @@
   }
 }
 
+.news__sidebar {
+  @include mq("md") {
+    margin-top: rem(16);
+  }
+}
+
 .news__menu {
   margin: rem(49) 0 0 rem(34);
   @include mq("md") {
-    margin: rem(45) 0 0 rem(20);
+    margin: rem(62) 0 0 rem(20);
   }
 }
 
 .news__content {
-  padding:  0 rem(20);
+  padding: 0 rem(20);
   @include mq("md") {
     border-left: rem(1) solid $gray5;
-    padding-left: rem(60);
+    padding: 0 0 0 rem(60);
     width: 100%;
     max-width: rem(836);
   }
@@ -27,4 +33,7 @@
 .news__btn-wrap {
   text-align: right;
   margin-top: rem(39);
+  @include mq("md") {
+    margin-top: rem(34);
+  }
 }

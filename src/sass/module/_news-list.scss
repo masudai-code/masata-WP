@@ -5,7 +5,7 @@
   border-bottom: rem(1) solid $gray5;
   border-top: rem(1) solid $gray5;
   @include mq("md") {
-    padding: rem(30) 0;
+    padding: rem(26.5) 0;
   }
 }
 
@@ -31,6 +31,10 @@
   display: flex;
   margin-left: rem(12);
   gap: rem(6);
+  @include mq("md") {
+    margin-left: rem(29);
+    gap: rem(20);
+  }
 }
 
 .news-list__text {
@@ -42,7 +46,7 @@
   display: inline-block;
   @include mq("md") {
     font-size: rem(16);
-    margin-top: rem(26);
+    margin-top: rem(21);
   }
 }
 
