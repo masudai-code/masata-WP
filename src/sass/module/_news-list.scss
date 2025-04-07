@@ -20,6 +20,7 @@
 
 .news-list__meta {
   display: flex;
+  margin-bottom: rem(21);
 }
 
 .news-list__date {
@@ -38,31 +39,41 @@
 }
 
 .news-list__text {
-  position: relative;
+  // position: relative;
   font-size: rem(14);
   font-weight: $medium;
   margin-top: rem(21);
   line-height: calc(28 / 14);
-  display: inline-block;
+  // display: inline-block;
+  background-image: linear-gradient(90deg, $black, $black);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 0 1px;
+  display: inline;
+  transition: background-size 0.5s;
   @include mq("md") {
     font-size: rem(16);
     margin-top: rem(21);
   }
 }
 
-.news-list__text::after {
-  content: "";
-  position: absolute;
-  bottom: rem(-2); /* 必要に応じて調整 */
-  left: 0;
-  width: 100%;
-  height: rem(1); /* 下線の太さ */
-  background-color: $black; /* 下線の色。お好みで変更 */
-  transform: scaleX(0); /* 初期状態は縮小 */
-  transform-origin: left; /* 左側から伸びるように */
-  transition: transform 0.3s ease; /* アニメーションの速度とイージング */
+.news-list__text:hover {
+  background-size: 100% 1px;
 }
 
-.news-list__item:hover .news-list__text::after {
-  transform: scaleX(1);
-}
+// .news-list__text::after {
+//   content: "";
+//   position: absolute;
+//   bottom: rem(-2); /* 必要に応じて調整 */
+//   left: 0;
+//   width: 100%;
+//   height: rem(1); /* 下線の太さ */
+//   background-color: $black; /* 下線の色。お好みで変更 */
+//   transform: scaleX(0); /* 初期状態は縮小 */
+//   transform-origin: left; /* 左側から伸びるように */
+//   transition: transform 0.3s ease; /* アニメーションの速度とイージング */
+// }
+
+// .news-list__item:hover .news-list__text::after {
+//   transform: scaleX(1);
+// }

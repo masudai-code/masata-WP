@@ -4,7 +4,7 @@
   background-color: $navy2;
   padding: rem(50) 0 rem(30);
   @include mq("md") {
-    padding: rem(53) 0 rem(54);
+    padding: rem(55) 0 rem(54);
   }
 }
 
@@ -31,7 +31,7 @@
 .footer__left {
   margin-top: rem(50);
   @include mq("md") {
-    margin-top: 0;
+    margin-top: rem(45);
   }
 }
 
@@ -52,7 +52,7 @@
 .footer__sns-list-wrap {
   margin-top: rem(50);
   @include mq("md") {
-    margin-top: 0;
+    margin-top: rem(6);
     margin-left: rem(46);
     display: flex;
     align-items: center;
@@ -83,7 +83,7 @@
   font-family: $third-font-family;
   margin-top: rem(45);
   @include mq("md") {
-    margin-top: rem(20);
+    margin-top: rem(18);
   }
 }
 
@@ -97,6 +97,6 @@
   font-family: $third-font-family;
   @include mq("md") {
     font-size: rem(16);
-    padding: rem(10) 0;
+    padding: rem(11.5) 0;
   }
 }
