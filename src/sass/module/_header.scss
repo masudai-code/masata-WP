@@ -76,6 +76,10 @@
   font-family: $third-font-family;
 }
 
+.header__nav-item a:hover {
+  opacity: 0.7;
+}
+
 .header__nav-item.header__nav-item--contact a {
   padding: rem(30.5) rem(41);
   position: relative;

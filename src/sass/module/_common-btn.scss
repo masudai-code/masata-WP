@@ -16,7 +16,7 @@
   content: "";
   position: absolute;
   top: 50%;
-  right:  rem(1);
+  right: rem(1);
   width: rem(6);
   height: rem(6);
   border-top: rem(1) solid $navy;
@@ -69,4 +69,12 @@
 
 .common-btn.common-btn--box:hover::before {
   right: rem(18);
+}
+
+.service-list__item:hover .common-btn.common-btn--box:before {
+  right: rem(18);
+}
+
+.service-list__item:hover .common-btn.common-btn--box p::after {
+  width: 100%;
 }
