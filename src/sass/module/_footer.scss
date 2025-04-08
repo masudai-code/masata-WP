@@ -74,10 +74,6 @@
   transition: opacity 0.3s ease;
 }
 
-.footer__sns-list .footer__sns-item a:hover {
-  opacity: 0.7;
-}
-
 .footer__sns-list .footer__sns-item:first-child a {
   padding-left: 0;
 }
@@ -107,6 +103,12 @@
   }
 }
 
-.footer__nav-item a:hover {
-  opacity: 0.7;
+@media (any-hover: hover) {
+  .footer__sns-list .footer__sns-item a:hover {
+    opacity: 0.7;
+  }
+
+  .footer__nav-item a:hover {
+    opacity: 0.7;
+  }
 }
