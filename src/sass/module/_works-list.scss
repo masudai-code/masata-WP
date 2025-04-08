@@ -25,9 +25,9 @@
 }
 
 .works-list__item-image {
-  width: 90.3%;
+  width: calc(calc(120 / 295) * 100%);
   @include mq("md") {
-    max-width: rem(290);
+    width: calc(calc(290 / 1020) * 100%);
   }
 }
 
@@ -41,10 +41,7 @@
 }
 
 .works-list__item-content {
-  @include mq("md") {
-    width: 100%;
-    max-width: rem(680);
-  }
+  flex: 1;
 }
 
 .works-list__item-category {
@@ -101,7 +98,6 @@
   right: 0;
   bottom: 0;
   color: $gray;
-  // padding-left: 4px;
 }
 
 .works-list__item-date {
