@@ -35,9 +35,14 @@
   width: 100%;
   aspect-ratio: 120/90;
   object-fit: cover;
+  transition: opacity 0.3s ease;
   @include mq("md") {
     aspect-ratio: 290/229;
   }
+}
+
+.works-list__item:hover .works-list__item-image img {
+  opacity: 0.7;
 }
 
 .works-list__item-content {
@@ -77,7 +82,7 @@
   }
 }
 
-.works-list__item-title:hover {
+.works-list__item:hover .works-list__item-title {
   background-size: 100% 1px;
 }
 
