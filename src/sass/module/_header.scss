@@ -196,6 +196,11 @@
   color: $white;
   text-transform: uppercase;
   font-family: $third-font-family;
+  transition: opacity 0.3s;
+}
+
+.header__drawer-item a:hover {
+  opacity: 0.7;
 }
 
 // ヘッダーSNS
@@ -214,6 +219,11 @@
 
 .header__sns-list .header__sns-item a {
   padding: 0 rem(10);
+  transition: opacity 0.3s;
+}
+
+.header__sns-list .header__sns-item a:hover {
+  opacity: 0.7;
 }
 
 .header__sns-list .header__sns-item:first-child a {
