@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+    <!-- meta情報 -->
+    <title>Excite Code</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="”icon”" href="" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- GSAP CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"
+      defer
+    ></script>
+    <!-- GSAP ScrollTrigger CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/jquery.inview.min.js" defer></script>
+    <script defer src="./assets/js/script.js"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ヘッダー-->
+    <header class="header layout-header">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="./index.html">
+            <img
+              loading="lazy"
+              src="./assets/images/common/logo01.svg"
+              alt="Excite Code"
+            />
+          </a>
+        </div>
+        <nav class="header__nav u-desktop">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="./index.html">top</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="./about.html">about</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="./service.html">service</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="./works.html">works</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="./news.html">news</a>
+            </li>
+            <li class="header__nav-item header__nav-item--contact">
+              <a href="./contact.html"
+                ><i class="fa-regular fa-envelope header__nav-item-icon"></i
+                >contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- hamburger -->
+        <button
+          class="header__hamburger js-hamburger u-mobile"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- ドロワー -->
+        <div class="header__drawer js-drawer u-mobile">
+          <nav class="header__drawer-nav">
+            <ul class="header__drawer-list">
+              <li class="header__drawer-item">
+                <a href="./index.html">top</a>
+              </li>
+              <li class="header__drawer-item">
+                <a href="./about.html">about</a>
+              </li>
+              <li class="header__drawer-item">
+                <a href="./service.html">service</a>
+              </li>
+              <li class="header__drawer-item">
+                <a href="./works.html">works</a>
+              </li>
+              <li class="header__drawer-item">
+                <a href="./news.html">news</a>
+              </li>
+              <li class="header__drawer-item">
+                <a href="./contact.html">contact</a>
+              </li>
+              <li class="header__drawer-item">
+                <a href="./privacy.html">プライバシーポリシー</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__sns-list-wrap">
+            <ul class="header__sns-list">
+              <li class="header__sns-item">
+                <a href="#" aria-label="Facebook"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </li>
+              <li class="header__sns-item">
+                <a href="#" aria-label="Twitter"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li class="header__sns-item">
+                <a href="#" aria-label="Instagram"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- FV -->
+      <div class="sub-about layout-sub-about">
+        <div class="sub-about__title common-sub-title">
+          <h1 class="common-sub-title__main">about</h1>
+          <p class="common-sub-title__sub">私たちについて</p>
+        </div>
+        <picture class="sub-about__img">
+          <source
+            srcset="./assets/images/common/sub-PCfv-about.jpg"
+            media="(min-width: 768px)"
+          />
+          <img
+            src="./assets/images/common/sub-SPfv-about.jpg"
+            alt="ショールームに並ぶ複数の車"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+
+      <!-- contact -->
+      <div class="contact">
+        <div class="contact__wrap">
+          <div class="contact__content">
+            <div class="contact__text">
+              輸入車の購入や修理のご相談など<br />お気軽にお問い合わせください。
+            </div>
+            <ul class="contact__btn-list">
+              <li class="contact__btn-item">
+                <div class="contact__btn-wrap">
+                  <a href="#" class="contact__btn"
+                    ><i class="fa-regular fa-envelope"></i
+                    ><span>お問い合わせ</span></a
+                  >
+                </div>
+              </li>
+              <li class="contact__btn-item">
+                <div class="contact__btn-wrap">
+                  <a href="tel:0000-000-000" class="contact__tel-btn"
+                    ><i class="fa-solid fa-phone"></i
+                    ><span>0000-000-000</span></a
+                  >
+                </div>
+              </li>
+            </ul>
+            <p class="contact__hours">受付時間 : 火曜日を除く 10：00〜18：00</p>
+          </div>
+          <div class="contact__img">
+            <picture>
+              <source
+                srcset="./assets/images/common/contact-pc01.jpg"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="./assets/images/common/contact-sp01.jpg"
+                alt="メタリックレッドやシルバーの洗練されたデザインの車が光を反射して輝いている。"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__wrap">
+          <div class="footer__left">
+            <div class="footer__brand">
+              <div class="footer__logo">
+                <a href="#">
+                  <img
+                    src="./assets/images/common/logo02.svg"
+                    alt="Excite Code"
+                  />
+                </a>
+              </div>
+              <div class="footer__sns-list-wrap">
+                <ul class="footer__sns-list">
+                  <li class="footer__sns-item">
+                    <a href="#" aria-label="Facebook"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li class="footer__sns-item">
+                    <a href="#" aria-label="Twitter"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="footer__sns-item">
+                    <a href="#" aria-label="Instagram"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p class="footer__copy">
+              &copy;2022&nbsp;ExciteCode&nbsp;Automobile
+            </p>
+          </div>
+          <div class="footer__right">
+            <nav class="footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#">top</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#">about</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#">service</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#">works</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#">news</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#">contact</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#">プライバシーポリシー</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.layout-sub-about {
+  margin-top: rem(110);
+  margin-left: rem(10);
+  @include mq("md") {
+    margin-top: rem(236);
+    margin-left: rem(170);
+  }
+}

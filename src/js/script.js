@@ -147,5 +147,36 @@ jQuery(function ($) {
         },
       }
     );
+
+    // sub-about左から右へ出現
+    gsap.from(".common-sub-title", {
+      x: -100, // 開始位置（左に100px）
+      opacity: 0, // 開始時は透明
+      duration: 1, // アニメーション時間（秒）
+      scrollTrigger: {
+        trigger: ".sub-about", // アニメーション開始のトリガー要素
+        start: "top 70%", // アニメーション開始位置
+      },
+    });
+
+    // sub-about__imgを下からふわっと出現
+    gsap.fromTo(
+      ".sub-about__img", // アニメーションさせる要素
+      {
+        y: 100, // アニメーション開始前の縦位置(下に100px)
+        autoAlpha: 0, // アニメーション開始前は透明
+      },
+      {
+        y: 0, // アニメーション後の縦位置(上に100px)
+        autoAlpha: 1, // アニメーション後に出現(透過率0)
+        duration: 1, // アニメーションの時間（必要に応じて調整）
+        ease: "power2.out",
+        stagger: 0.2, // 各要素のアニメーション開始を0.2秒ずつずらす
+        scrollTrigger: {
+          trigger: ".sub-about__img", // アニメーションが始まるトリガーとなる要素
+          start: "top 70%", // アニメーションの開始位置
+        },
+      }
+    );
   });
 });
