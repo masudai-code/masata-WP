@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.intro-content__inner.inner {
+  max-width: rem(890);
+}
+
+.catch-copy__main {
+  font-size: rem(18);
+  font-weight: $medium;
+  line-height: calc(37 / 18);
+  @include mq("md") {
+    font-size: rem(40);
+    line-height: calc(60 / 40);
+  }
+}
+
+.company-message__text {
+  margin-top: rem(30);
+  font-size: rem(14);
+  line-height: calc(32 / 14);
+  @include mq("md") {
+    margin-top: rem(40);
+    font-size: rem(16);
+    line-height: calc(32 / 16);
+  }
+}
