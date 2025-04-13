@@ -1,6 +1,31 @@
 @use "global" as *;
 
-.common-item {
-}
 .common-item__link {
+  padding-right: rem(13);
+  position: relative;
+  display: inline-block;
+  font-size: rem(12);
+  color: $navy;
+  line-height: 1;
+  @include mq("md") {
+    font-size: rem(16);
+    padding-right: rem(15);
+  }
+}
+
+.common-item__link::before {
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: rem(1);
+  width: rem(6);
+  height: rem(6);
+  border-top: rem(1) solid $navy;
+  border-right: rem(1) solid $navy;
+  transform: translateY(-50%) rotate(135deg);
+  transition: 0.3s;
+}
+
+.common-item__link:hover {
+  opacity: 0.7;
 }

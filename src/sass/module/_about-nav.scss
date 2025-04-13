@@ -1,8 +1,18 @@
 @use "global" as *;
 
 .about-nav {
+  margin-top: rem(30);
+  @include mq("md") {
+    margin-top: rem(60);
+  }
 }
+
 .about-nav__list {
-}
-.about-nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(40);
+  @include mq("md") {
+    gap: rem(120);
+  }
 }
