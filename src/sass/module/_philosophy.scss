@@ -14,9 +14,9 @@
   background-color: $gray3;
   z-index: -1;
   @include mq("md") {
-    // display: none;
-    height: 100%;
-    width: calc(100% - rem(100));
+    display: none;
+    // height: 100%;
+    // width: calc(100% - rem(100));
   }
 }
 
@@ -30,8 +30,10 @@
 
 .philosophy__content {
   @include mq("md") {
-    padding: rem(70) rem(40) rem(70) rem(30);
+    padding: rem(70) rem(30) rem(70) rem(30);
     flex: 1;
+    background-color: $gray3;
+
   }
 }
 
@@ -92,9 +94,11 @@
 .philosophy__img img {
   margin-top: rem(30);
   width: 100%;
-  aspect-ratio: 360 / 535;
+  aspect-ratio: 335 / 300;
   object-fit: cover;
   @include mq("md") {
     margin-top: 0;
+  aspect-ratio: 360 / 535;
+    height: 100%;
   }
 }
