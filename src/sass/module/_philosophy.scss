@@ -15,16 +15,12 @@
   z-index: -1;
   @include mq("md") {
     display: none;
-    // height: 100%;
-    // width: calc(100% - rem(100));
   }
 }
 
 .philosophy__inner {
   @include mq("md") {
     display: flex;
-    // position: relative;
-    // background-color: $gray3;
   }
 }
 
@@ -33,36 +29,7 @@
     padding: rem(70) rem(30) rem(70) rem(30);
     flex: 1;
     background-color: $gray3;
-
   }
-}
-
-.philosophy__label {
-  font-size: rem(12);
-  font-weight: bold;
-  color: $navy;
-  @include mq("md") {
-    font-size: rem(16);
-  }
-}
-
-.philosophy__title {
-  font-size: rem(26);
-  font-weight: bold;
-  font-family: $second-font-family;
-  text-transform: capitalize;
-  position: relative;
-  display: inline-block;
-}
-
-.philosophy__title::after {
-  content: "";
-  position: absolute;
-  bottom: 17px;
-  left: 127px;
-  width: 60px;
-  height: 2px;
-  background-color: $black;
 }
 
 .philosophy__text {
@@ -98,7 +65,7 @@
   object-fit: cover;
   @include mq("md") {
     margin-top: 0;
-  aspect-ratio: 360 / 535;
+    aspect-ratio: 360 / 535;
     height: 100%;
   }
 }

@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.common-about__label {
+  font-size: rem(12);
+  font-weight: bold;
+  color: $navy;
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+
+.common-about__title {
+  font-size: rem(26);
+  font-weight: bold;
+  font-family: $second-font-family;
+  text-transform: capitalize;
+  position: relative;
+  display: inline-block;
+  @include mq("md") {
+    font-size: rem(40);
+  }
+}
+
+.common-about__title::after {
+  content: "";
+  position: absolute;
+  bottom: 17px;
+  left: 127px;
+  width: 60px;
+  height: 2px;
+  background-color: $black;
+  @include mq("md") {
+    bottom: rem(30);
+    left: rem(190);
+  }
+}
