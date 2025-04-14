@@ -1,0 +1,100 @@
+@use "global" as *;
+
+.philosophy {
+  position: relative;
+}
+
+.philosophy::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - rem(84));
+  background-color: $gray3;
+  z-index: -1;
+  @include mq("md") {
+    // display: none;
+    height: 100%;
+    width: calc(100% - rem(100));
+  }
+}
+
+.philosophy__inner {
+  @include mq("md") {
+    display: flex;
+    // position: relative;
+    // background-color: $gray3;
+  }
+}
+
+.philosophy__content {
+  @include mq("md") {
+    padding: rem(70) rem(40) rem(70) rem(30);
+    flex: 1;
+  }
+}
+
+.philosophy__label {
+  font-size: rem(12);
+  font-weight: bold;
+  color: $navy;
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+
+.philosophy__title {
+  font-size: rem(26);
+  font-weight: bold;
+  font-family: $second-font-family;
+  text-transform: capitalize;
+  position: relative;
+  display: inline-block;
+}
+
+.philosophy__title::after {
+  content: "";
+  position: absolute;
+  bottom: 17px;
+  left: 127px;
+  width: 60px;
+  height: 2px;
+  background-color: $black;
+}
+
+.philosophy__text {
+  font-size: rem(14);
+  line-height: calc(32 / 14);
+  margin-top: rem(30);
+  @include mq("md") {
+    font-size: rem(16);
+    margin-top: rem(60);
+  }
+}
+
+.philosophy__name {
+  font-size: rem(14);
+  margin-top: rem(30);
+  text-align: right;
+  @include mq("md") {
+    font-size: rem(16);
+    margin-top: rem(40);
+  }
+}
+
+.philosophy__img {
+  @include mq("md") {
+    width: calc(calc(360 / 1100) * 100%);
+  }
+}
+
+.philosophy__img img {
+  margin-top: rem(30);
+  width: 100%;
+  aspect-ratio: 360 / 535;
+  object-fit: cover;
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
