@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.access__info {
+  margin-top: rem(20);
+  @include mq("md") {
+    margin-top: rem(8);
+    display: flex;
+    gap: rem(20);
+  }
+}
+.access__postal {
+  font-size: rem(14);
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+.access__address {
+  font-size: rem(14);
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+.access__map-wrap {
+  margin-top: rem(20);
+  width: 100%;
+  @include mq("md") {
+    margin-top: rem(60);
+    max-width: rem(1100);
+  }
+}
+
+.access__map {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 119.403%;
+  @include mq("md") {
+    padding-top: 36.364%;
+  }
+}
+
+.access__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
