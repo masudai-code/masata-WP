@@ -25,12 +25,12 @@
   content: "";
   position: absolute;
   bottom: 17px;
-  left: 127px;
+  left: calc(100% + 10px);
   width: 60px;
   height: 2px;
   background-color: $black;
   @include mq("md") {
     bottom: rem(30);
-    left: rem(190);
+    left: calc(100% + 20px);
   }
 }
