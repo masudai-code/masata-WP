@@ -9,13 +9,6 @@
   transition-timing-function: linear;
 }
 
-.company-swiper .swiper-slide {
-  padding-right: rem(4);
-  @include mq("md") {
-    padding-right: rem(10);
-  }
-}
-
 .company-swiper .swiper-slide img {
   width: 100%;
   aspect-ratio: 1/1;

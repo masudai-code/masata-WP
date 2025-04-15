@@ -195,6 +195,7 @@ jQuery(function ($) {
           spaceBetween: 10,
         },
       },
+      allowTouchMove: false,
     });
   });
 });
