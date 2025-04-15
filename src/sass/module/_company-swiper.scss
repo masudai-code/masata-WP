@@ -1,7 +1,19 @@
 @use "global" as *;
 
+.company-swiper {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+}
+
 .company-swiper .swiper-wrapper {
   transition-timing-function: linear;
+}
+
+.company-swiper .swiper-slide {
+  padding-right: rem(4);
+  @include mq("md") {
+    padding-right: rem(10);
+  }
 }
 
 .company-swiper .swiper-slide img {

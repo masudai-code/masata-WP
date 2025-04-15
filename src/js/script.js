@@ -184,6 +184,7 @@ jQuery(function ($) {
       loop: true,
       speed: 4000,
       slidesPerView: 2.2,
+      spaceBetween: 4,
       autoplay: {
         delay: 0,
         disableOnInteraction: false,
@@ -191,6 +192,7 @@ jQuery(function ($) {
       breakpoints: {
         768: {
           slidesPerView: 3,
+          spaceBetween: 10,
         },
       },
     });
