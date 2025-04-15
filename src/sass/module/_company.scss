@@ -3,3 +3,10 @@
 .company {
   background-color: $gray3;
 }
+
+.company__swiper {
+  margin-top: rem(80);
+  @include mq("md") {
+    margin-top: rem(120);
+  }
+}

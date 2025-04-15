@@ -178,5 +178,21 @@ jQuery(function ($) {
         },
       }
     );
+
+    // company__swiper(about)
+    const companySwiper = new Swiper(".js-company-swiper", {
+      loop: true,
+      speed: 4000,
+      slidesPerView: 2.2,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+        },
+      },
+    });
   });
 });

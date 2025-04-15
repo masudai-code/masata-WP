@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.company-swiper .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.company-swiper .swiper-slide img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
