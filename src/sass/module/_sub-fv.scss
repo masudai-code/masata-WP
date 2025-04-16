@@ -6,6 +6,13 @@
   overflow-x: hidden;
 }
 
+.sub-fv__inner.inner {
+  padding-left: rem(10);
+  @include mq("md") {
+    padding-left: $padding-pc;
+  }
+}
+
 .sub-fv__title {
   position: absolute;
   top: 0;
