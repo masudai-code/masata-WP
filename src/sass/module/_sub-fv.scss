@@ -1,6 +1,11 @@
 @use "global" as *;
 
-.common-sub-title {
+.sub-fv {
+  position: relative;
+  z-index: 1;
+}
+
+.sub-fv__title {
   position: absolute;
   top: 0;
   left: 0;
@@ -14,7 +19,7 @@
   }
 }
 
-.common-sub-title__main {
+.sub-fv__title-main {
   font-size: rem(44);
   font-weight: $bold;
   line-height: 1.3182;
@@ -25,7 +30,7 @@
   }
 }
 
-.common-sub-title__sub {
+.sub-fv__title-sub {
   font-size: rem(12);
   font-weight: bold;
   @include mq("md") {
