@@ -160,21 +160,23 @@
     <main>
       <!-- FV -->
       <div class="sub-about layout-sub-about">
-        <div class="sub-about__title common-sub-title">
-          <h1 class="common-sub-title__main">about</h1>
-          <p class="common-sub-title__sub">私たちについて</p>
+        <div class="sub-about__inner">
+          <div class="sub-about__title common-sub-title">
+            <h1 class="common-sub-title__main">about</h1>
+            <p class="common-sub-title__sub">私たちについて</p>
+          </div>
+          <picture class="sub-about__img">
+            <source
+              srcset="./assets/images/common/sub-PCfv-about.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./assets/images/common/sub-SPfv-about.jpg"
+              alt="ショールームに並ぶ複数の車"
+              loading="lazy"
+            />
+          </picture>
         </div>
-        <picture class="sub-about__img">
-          <source
-            srcset="./assets/images/common/sub-PCfv-about.jpg"
-            media="(min-width: 768px)"
-          />
-          <img
-            src="./assets/images/common/sub-SPfv-about.jpg"
-            alt="ショールームに並ぶ複数の車"
-            loading="lazy"
-          />
-        </picture>
       </div>
 
       <!-- パンくずリスト -->
@@ -184,13 +186,13 @@
       <nav class="about-nav">
         <ul class="about-nav__list">
           <li class="about-nav__item common-item">
-            <a href="#" class="common-item__link">経営理念</a>
+            <a href="#philosophy" class="common-item__link">経営理念</a>
           </li>
           <li class="about-nav__item common-item">
-            <a href="#" class="common-item__link">アクセス</a>
+            <a href="#access" class="common-item__link">アクセス</a>
           </li>
           <li class="about-nav__item common-item">
-            <a href="#" class="common-item__link">会社概要</a>
+            <a href="#company " class="common-item__link">会社概要</a>
           </li>
         </ul>
       </nav>
@@ -199,10 +201,10 @@
       <div class="intro-wrapper layout-intro-wrapper">
         <div class="intro-content__inner inner">
           <div class="catch-copy">
-            <p class="catch-copy__main">
+            <h2 class="catch-copy__main">
               国境を超え、メーカーを超え<br />
               「型にはまらない」あなただけの歓びを
-            </p>
+            </h2>
           </div>
           <div class="company-message">
             <p class="company-message__text">
@@ -215,11 +217,11 @@
       </div>
 
       <!-- 経営理念 -->
-      <div class="philosophy layout-philosophy">
+      <div id="philosophy" class="philosophy layout-philosophy">
         <div class="philosophy__inner inner">
           <div class="philosophy__content">
             <p class="common-about__label">経営理念</p>
-            <p class="common-about__title">philosophy</p>
+            <h3 class="common-about__title">philosophy</h3>
             <p class="philosophy__text">
               「お客様とは一生涯のお付き合い」をモットーとし、同時に社員一人一人が責任と誇り、使命感を持ち日々の仕事にやりがいと喜びを感じることができる会社を目指します。そういう「社員満足」があってこそ、本当の「お客様に満足」が可能になり、そしてお客様のご満足がさらに社員の満足を高めてくれるからです。心の豊かさは楽とかゆとりとかいうより仕事の充実感に求めねばなりません。我々は現状に満足することなく挑戦し続けます。
             </p>
@@ -240,11 +242,11 @@
       </div>
 
       <!-- アクセス -->
-      <div class="access layout-access">
+      <div id="access" class="access layout-access">
         <div class="access__inner inner">
           <div class="access__header">
             <p class="common-about__label">アクセス</p>
-            <p class="common-about__title">access</p>
+            <h3 class="common-about__title">access</h3>
           </div>
           <div class="access__info">
             <p class="access__postal">〒812-0012</p>
@@ -260,6 +262,7 @@
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
+                title="Excite Codeの地図"
               ></iframe>
             </div>
           </div>
@@ -267,11 +270,11 @@
       </div>
 
       <!-- 会社概要 -->
-      <div class="company layout-company">
+      <div id="company" class="company layout-company">
         <div class="company__inner inner">
           <div class="company__title-area">
             <p class="common-about__label">会社概要</p>
-            <p class="common-about__title">company&nbsp;profile</p>
+            <h3 class="common-about__title">company&nbsp;profile</h3>
           </div>
           <div class="company__profile company-profile">
             <dl class="company-profile__list">
@@ -406,7 +409,7 @@
         </div>
       </div>
     </main>
-    
+
     <!-- footer -->
     <footer class="footer">
       <div class="footer__inner">
