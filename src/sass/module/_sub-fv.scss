@@ -3,6 +3,7 @@
 .sub-fv {
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
 }
 
 .sub-fv__title {
@@ -35,5 +36,24 @@
   font-weight: bold;
   @include mq("md") {
     font-size: rem(20);
+  }
+}
+
+.sub-fv__img {
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  display: inline-block;
+  position: relative;
+  @include mq("md") {
+    max-width: rem(1270);
+  }
+}
+
+.sub-fv__img img {
+  width: 100%;
+  aspect-ratio: 365 / 280;
+  object-fit: cover;
+  @include mq("md") {
+    aspect-ratio: 1270 / 514;
   }
 }
