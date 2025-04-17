@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .access__info {
-  margin-top: rem(20);
+  margin-top: rem(19);
   @include mq("md") {
     margin-top: rem(8);
     display: flex;
@@ -16,6 +16,7 @@
 }
 .access__address {
   font-size: rem(14);
+  margin-top: rem(3);
   @include mq("md") {
     font-size: rem(16);
   }

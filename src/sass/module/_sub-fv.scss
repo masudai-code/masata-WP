@@ -18,8 +18,8 @@
   top: 0;
   left: 0;
   background-color: $white;
-  padding: rem(18) rem(18) rem(36) rem(18);
-  width: calc(calc(190 / 365) * 100%);
+  padding: rem(29) rem(18) rem(37) rem(18);
+  width: 50.6%;
   z-index: 2;
   @include mq("md") {
     width: calc(calc(500 / 1270) * 100%);
@@ -30,7 +30,7 @@
 .sub-fv__title-main {
   font-size: rem(44);
   font-weight: $bold;
-  line-height: 1.3182;
+  line-height: 1;
   font-family: $second-font-family;
   text-transform: capitalize;
   @include mq("md") {
@@ -41,6 +41,7 @@
 .sub-fv__title-sub {
   font-size: rem(12);
   font-weight: bold;
+  margin-top: rem(2);
   @include mq("md") {
     font-size: rem(20);
   }
