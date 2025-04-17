@@ -3,7 +3,7 @@
 .access__info {
   margin-top: rem(19);
   @include mq("md") {
-    margin-top: rem(8);
+    margin-top: rem(6);
     display: flex;
     gap: rem(20);
   }
@@ -19,6 +19,7 @@
   margin-top: rem(3);
   @include mq("md") {
     font-size: rem(16);
+    margin-top: 0;
   }
 }
 .access__map-wrap {
