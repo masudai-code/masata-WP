@@ -19,8 +19,8 @@
   font-size: rem(14);
   line-height: calc(32 / 14);
   @include mq("md") {
-    margin-top: rem(40);
+    margin-top: rem(41);
     font-size: rem(16);
-    line-height: calc(32 / 16);
+    line-height: 2.3;
   }
 }
