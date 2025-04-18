@@ -17,4 +17,5 @@
 .common-category.common-category--bgWhite {
   background-color: $white;
   color: $gray;
+  flex-shrink: 0;
 }

@@ -22,6 +22,11 @@
   }
 }
 
+.service-list__item a {
+  display: block;
+  height: 100%;
+}
+
 .service-list__item a:hover .service-list__item-image {
   opacity: 0.7;
 }
@@ -41,6 +46,9 @@
   width: 100%;
   aspect-ratio: 335/170;
   object-fit: cover;
+  @include mq("md") {
+    aspect-ratio: 355/170;
+  }
 }
 
 .service-list__title-wrap {
@@ -70,9 +78,14 @@
 }
 
 .service-list__content {
+  margin-top: rem(20);
+  font-size: rem(14);
+  line-height: calc(32 / 14);
   @include mq("md") {
     width: 100%;
     max-width: rem(335);
+    font-size: rem(16);
+    line-height: calc(38 / 16);
   }
 }
 
@@ -88,6 +101,7 @@
 
 .service-list__btn-wrap {
   text-align: right;
+  padding-top: rem(20);
 }
 
 .service__title {

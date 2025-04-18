@@ -11,17 +11,20 @@
   width: 100%;
   height: inherit;
   min-height: inherit;
+  max-width: 600px;
   @include mq(md) {
     padding: 0 rem(66) 0 rem(80);
+    max-width: inherit;
   }
 }
 
 .fv__wrap {
   height: inherit;
+  min-height: inherit;
   @include mq("md") {
     display: flex;
-    // gap: rem(101);
     gap: rem(86);
+    justify-content: center;
   }
 }
 
