@@ -8,6 +8,7 @@
 
 .sub-fv__inner.inner {
   padding-left: rem(10);
+  position: relative;
   @include mq("md") {
     padding-left: $padding-pc;
   }
