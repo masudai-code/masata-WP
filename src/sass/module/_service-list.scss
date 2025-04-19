@@ -12,6 +12,12 @@
   }
 }
 
+.service-list__item-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .service-list__item {
   display: flex;
   flex-direction: column;
@@ -23,7 +29,8 @@
 }
 
 .service-list__item a {
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -81,6 +88,9 @@
   margin-top: rem(20);
   font-size: rem(14);
   line-height: calc(32 / 14);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   @include mq("md") {
     width: 100%;
     max-width: rem(335);
@@ -92,7 +102,6 @@
 .service-list__item-text {
   font-size: rem(14);
   line-height: calc(32 / 14);
-  margin: rem(20) 0;
   @include mq("md") {
     font-size: rem(16);
     line-height: calc(38 / 16);
@@ -102,6 +111,7 @@
 .service-list__btn-wrap {
   text-align: right;
   padding-top: rem(20);
+  margin-top: auto;
 }
 
 .service__title {
