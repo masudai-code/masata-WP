@@ -17,14 +17,14 @@
 .sub-fv__title {
   position: absolute;
   top: 0;
-  left: 0;
+  left: rem(24);
   background-color: $white;
   padding: rem(29) rem(18) rem(37) rem(18);
   width: 50.6%;
   z-index: 2;
   @include mq("md") {
-    width: calc(calc(500 / 1270) * 100%);
-    padding: rem(42) rem(16) rem(47) rem(50);
+    width: 43.6%;
+    padding: rem(41) rem(16) rem(47) rem(50);
   }
 }
 
