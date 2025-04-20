@@ -5,7 +5,7 @@
   position: relative;
   display: inline-block;
   font-size: rem(12);
-  color: $navy;
+  color: $blue;
   line-height: 1;
   @include mq("md") {
     font-size: rem(16);
