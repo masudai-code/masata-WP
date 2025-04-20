@@ -17,7 +17,7 @@
 .sub-fv__title {
   position: absolute;
   top: 0;
-  left: rem(24);
+  left: rem(10);
   background-color: $white;
   padding: rem(29) rem(18) rem(37) rem(18);
   width: 50.6%;
@@ -25,6 +25,7 @@
   @include mq("md") {
     width: 43.6%;
     padding: rem(41) rem(16) rem(47) rem(50);
+    left: rem(24);
   }
 }
 
