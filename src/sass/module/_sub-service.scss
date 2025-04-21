@@ -69,12 +69,16 @@
 .sub-service-list__number::before {
   content: "";
   position: absolute;
-  left: 14%;
+  left: rem(42);
   top: 50%;
   transform: translateY(-50%);
   width: rem(1);
   height: rem(30);
   background-color: $black;
+  @include mq("md") {
+    left: rem(54);
+    height: rem(34);
+  }
 }
 
 .sub-service-list__title {
