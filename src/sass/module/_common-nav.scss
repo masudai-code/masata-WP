@@ -1,6 +1,18 @@
 @use "global" as *;
 
-.common-item__link {
+.common-nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: rem(22);
+  gap: rem(40);
+  @include mq("md") {
+    margin-top: rem(74);
+    gap: rem(120);
+  }
+}
+
+.common-nav__item a {
   padding-right: rem(13);
   position: relative;
   display: inline-block;
@@ -13,7 +25,7 @@
   }
 }
 
-.common-item__link::before {
+.common-nav__item a::before {
   content: "";
   position: absolute;
   top: 45%;
@@ -26,6 +38,6 @@
   transition: 0.3s;
 }
 
-.common-item__link:hover {
+.common-nav__item a:hover {
   opacity: 0.7;
 }
