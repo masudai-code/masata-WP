@@ -1,16 +1,16 @@
 @use "global" as *;
 
 .news-list__item {
-  padding: rem(18.7) 0;
   border-bottom: rem(1) solid $gray5;
   border-top: rem(1) solid $gray5;
-  @include mq("md") {
-    padding: rem(26.5) 0;
-  }
 }
 
 .news-list__item a {
   display: block;
+  padding: rem(18.7) 0;
+  @include mq("md") {
+    padding: rem(26.5) 0;
+  }
 }
 
 .news-list__item:first-child {
