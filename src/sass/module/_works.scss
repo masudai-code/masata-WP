@@ -13,6 +13,16 @@
   }
 }
 
+.works__content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: rem(600);
+  width: 100%;
+  @include mq("md") {
+    max-width: 1150px;
+  }
+}
+
 .works__btn-wrap {
   text-align: right;
   margin-top: rem(32);

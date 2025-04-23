@@ -58,8 +58,8 @@ jQuery(function ($) {
     // works-list__item-titleの文字数を全角24文字(半角45文字)に制限
     document.querySelectorAll(".works-list__item-title").forEach(function (el) {
       const text = el.textContent;
-      if (text.length > 47) {
-        el.textContent = text.slice(0, 47) + "...";
+      if (text.length > 49) {
+        el.textContent = text.slice(0, 49) + "...";
       }
     });
 
