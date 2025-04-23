@@ -75,6 +75,10 @@
   right: rem(18);
 }
 
+.service-list__item .common-btn.common-btn--box p::after {
+  height: 0;
+}
+
 .service-list__item:hover .common-btn.common-btn--box p::after {
-  width: 100%;
+  width: 0;
 }
