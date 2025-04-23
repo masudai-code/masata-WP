@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.layout-sub-news {
+  padding: rem(30) 0 rem(80) 0;
+  @include mq("md") {
+    padding: rem(60) 0  rem(120);
+  }
+}

@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.news-list__item {
+.sub-news-list__item {
   padding: rem(18.7) 0;
   border-bottom: rem(1) solid $gray5;
   border-top: rem(1) solid $gray5;
@@ -9,7 +9,7 @@
   }
 }
 
-.news-list__item:first-child {
+.sub-news-list__item:first-child {
   margin-top: rem(37);
   @include mq("md") {
     margin-top: 0;
@@ -18,17 +18,17 @@
   }
 }
 
-.news-list__meta {
+.sub-news-list__meta {
   display: flex;
   margin-bottom: rem(21);
 }
 
-.news-list__date {
+.sub-news-list__date {
   display: flex;
   align-items: center;
 }
 
-.news-list__categories {
+.sub-news-list__categories {
   display: flex;
   margin-left: rem(12);
   gap: rem(6);
@@ -38,7 +38,7 @@
   }
 }
 
-.news-list__text {
+.sub-news-list__text {
   font-size: rem(14);
   font-weight: $medium;
   margin-top: rem(21);
@@ -55,6 +55,6 @@
   }
 }
 
-.news-list__text:hover {
+.sub-news-list__text:hover {
   background-size: 100% 1px;
 }
