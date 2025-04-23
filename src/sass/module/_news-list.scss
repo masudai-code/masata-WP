@@ -9,6 +9,10 @@
   }
 }
 
+.news-list__item a {
+  display: block;
+}
+
 .news-list__item:first-child {
   margin-top: rem(37);
   @include mq("md") {
