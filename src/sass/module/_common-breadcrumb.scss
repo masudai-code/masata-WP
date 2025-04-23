@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.common-breadcrumb__inner {
+  text-align: right;
+  padding-right: 10px;
+  margin-right: auto;
+  font-size: rem(10);
+  font-family: $third-font-family;
+  @include mq("md") {
+    font-size: rem(15);
+    padding-right: rem(60);
+  }
+}
+
+.common-breadcrumb__separator {
+}
+.current-item {
+}
