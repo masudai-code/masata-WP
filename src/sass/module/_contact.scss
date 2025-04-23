@@ -162,5 +162,6 @@
   padding: 0;
   @include mq("md") {
     aspect-ratio: 820/446;
+    height: rem(446);
   }
 }

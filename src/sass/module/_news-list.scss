@@ -24,12 +24,14 @@
 }
 
 .news-list__date {
-  display: flex;
-  align-items: center;
+  @include mq("md") {
+    padding-top: rem(3);
+  }
 }
 
 .news-list__categories {
   display: flex;
+  flex-wrap: wrap;
   margin-left: rem(12);
   gap: rem(6);
   @include mq("md") {
