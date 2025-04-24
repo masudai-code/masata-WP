@@ -5,10 +5,16 @@ jQuery(function ($) {
       $(this).toggleClass("is-open");
       $(".js-drawer").toggleClass("is-open");
 
-      // ドロワーが開いたときにロゴを変更
+      // ドロワーが開いたときにロゴを変更（遅延を追加）
       if ($(".js-drawer").hasClass("is-open")) {
-        $(".header__logo img").attr("src", "./assets/images/common/logo02.svg");
+        setTimeout(function () {
+          $(".header__logo img").attr(
+            "src",
+            "./assets/images/common/logo02.svg"
+          );
+        }, 200); // 0.5秒の遅延
       } else {
+        // 閉じるときは遅延なし
         $(".header__logo img").attr("src", "./assets/images/common/logo01.svg");
       }
     });
