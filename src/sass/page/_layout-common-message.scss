@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.layout-common-message {
+  margin-top: rem(60);
+  @include mq("md") {
+    margin-top: rem(100);
+  }
+}
