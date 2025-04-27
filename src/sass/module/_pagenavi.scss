@@ -1,0 +1,79 @@
+@use "global" as *;
+
+.pagenavi {
+  max-width: rem(307);
+  width: rem(307);
+  margin: 0 auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.pagenavi__inner {
+  width: 100%;
+}
+
+.pagenavi .wp-pagenavi {
+  clear: both;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.pagenavi .wp-pagenavi a,
+.pagenavi .wp-pagenavi span {
+  margin: rem(40) rem(4) 0;
+  padding: rem(9.5) rem(16.5);
+  font-size: rem(14);
+  line-height: 1;
+  font-family: $second-font-family;
+  white-space: nowrap;
+  border: 1px solid $gray6;
+  background-color: $gray6;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagenavi .wp-pagenavi .previouspostslink,
+.pagenavi .wp-pagenavi .nextpostslink {
+  background-color: transparent;
+  border: none;
+  margin: rem(40) rem(2) 0;
+  padding: rem(9.5) rem(8);
+}
+
+.pagenavi .wp-pagenavi a:hover {
+  color: $white;
+  background-color: $navy;
+  border-color: $navy;
+  opacity: 1;
+}
+
+.pagenavi .wp-pagenavi .previouspostslink:hover,
+.pagenavi .wp-pagenavi .nextpostslink:hover {
+  background-color: transparent;
+  border: none;
+}
+
+.pagenavi .wp-pagenavi .current {
+  color: $white;
+  background-color: $navy;
+  border-color: $navy;
+}
+
+.pagenavi .wp-pagenavi .previouspostslink img,
+.pagenavi .wp-pagenavi .nextpostslink img {
+  vertical-align: middle;
+  transition: 0.3s;
+}
+
+.pagenavi .wp-pagenavi .previouspostslink:hover img,
+.pagenavi .wp-pagenavi .nextpostslink:hover img {
+  opacity: 0.7;
+}
