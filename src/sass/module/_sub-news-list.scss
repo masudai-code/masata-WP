@@ -1,9 +1,13 @@
 @use "global" as *;
 
 .sub-news-list__item {
-  padding: rem(18.7) 0;
   border-bottom: rem(1) solid $gray5;
   border-top: rem(1) solid $gray5;
+}
+
+.sub-news-list__item a {
+  display: block;
+  padding: rem(18.7) 0;
   @include mq("md") {
     padding: rem(26.5) 0;
   }
