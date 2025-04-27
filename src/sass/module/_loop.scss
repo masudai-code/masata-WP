@@ -1,22 +1,36 @@
 @use "global" as *;
 
-.slide-text {
+.loop {
+  position: relative;
+  // height: 100vh;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  white-space: nowrap;
   overflow: hidden;
 }
 
-.slide-text__inner {
+.loop__list {
   display: flex;
-  animation: loop-text 10s linear infinite;
+  width: max-content;
+  animation: loopText 20s linear infinite;
   margin-top: rem(49);
   @include mq("md") {
     margin-top: rem(69);
   }
 }
 
-.slide-text__content {
+@keyframes loopText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.loop__item {
+  padding: 0 rem(20);
+  flex-shrink: 0;
   display: inline-block;
   color: $blue;
   font-size: rem(84);
@@ -26,14 +40,5 @@
   white-space: nowrap;
   @include mq("md") {
     font-size: rem(150);
-  }
-}
-
-@keyframes loop-text {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
   }
 }
