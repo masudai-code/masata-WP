@@ -224,6 +224,25 @@ jQuery(function ($) {
       },
     });
 
+    // sub-news__listを上からふわっと出現
+    gsap.fromTo(
+      ".sub-news-list__item", // アニメーションさせる要素
+      {
+        y: -50, // アニメーション開始前の縦位置(上に50px)
+        autoAlpha: 0, // アニメーション開始前は透明
+      },
+      {
+        y: 0, // アニメーション後の縦位置(元の位置)
+        autoAlpha: 1, // アニメーション後に出現(透過率0)
+        duration: 1.5, // アニメーションの時間
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".sub-news__list", // アニメーションが始まるトリガーとなる要素
+          start: "top 70%", // アニメーションの開始位置
+        },
+      }
+    );
+
     // company__swiper(about)
     const companySwiper = new Swiper(".js-company-swiper", {
       loop: true,
