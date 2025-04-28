@@ -8,14 +8,14 @@
 .sub-news__wrapper {
   @include mq("md") {
     display: flex;
-    gap: rem(90);
+    gap: rem(94);
   }
 }
 
 .sub-news__menu {
   margin-left: rem(14);
   @include mq("md") {
-    margin-left: rem(20);
+    margin-left: rem(16);
   }
 }
 

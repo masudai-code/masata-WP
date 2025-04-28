@@ -46,11 +46,15 @@ jQuery(function ($) {
           }
         });
       } else {
-        // PC表示時は元のテキストを復元
+        // PC表示時は46文字で制限
         $(".sub-news-list__text").each(function () {
           const originalText = $(this).attr("data-original-text");
           if (originalText) {
-            $(this).text(originalText);
+            if (originalText.length > 69) {
+              $(this).text(originalText.slice(0, 69) + "...");
+            } else {
+              $(this).text(originalText);
+            }
           }
         });
       }
