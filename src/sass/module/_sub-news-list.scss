@@ -7,7 +7,7 @@
 
 .sub-news-list__item a {
   display: block;
-  padding: rem(18.7) 0;
+  padding: rem(19) 0;
   @include mq("md") {
     padding: rem(26.5) 0;
   }
@@ -19,6 +19,12 @@
     margin-top: 0;
     padding-top: 0;
     border-top: none;
+  }
+}
+
+.sub-news-list__item:first-child a {
+  @include mq("md") {
+    padding-top: 0;
   }
 }
 

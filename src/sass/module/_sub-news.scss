@@ -12,16 +12,10 @@
   }
 }
 
-.sub-news__sidebar {
-  @include mq("md") {
-    margin-top: rem(16);
-  }
-}
-
 .sub-news__menu {
   margin-left: rem(14);
   @include mq("md") {
-    margin: rem(62) 0 0 rem(20);
+    margin-left: rem(20);
   }
 }
 
