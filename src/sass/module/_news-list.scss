@@ -28,9 +28,7 @@
 }
 
 .news-list__date {
-  @include mq("md") {
-    padding-top: rem(3);
-  }
+  padding-top: rem(3);
 }
 
 .news-list__categories {
