@@ -9,7 +9,7 @@
 
 .company-profile__list {
   padding-bottom: rem(19);
-  border-bottom: 1px solid $gray5;
+  border-bottom: rem(1) solid $gray5;
   @include mq("md") {
     padding-bottom: rem(38);
     display: flex;

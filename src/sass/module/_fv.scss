@@ -11,7 +11,7 @@
   width: 100%;
   height: inherit;
   min-height: inherit;
-  max-width: 600px;
+  max-width: rem(600);
   @include mq(md) {
     padding: 0 rem(66) 0 rem(80);
     max-width: inherit;

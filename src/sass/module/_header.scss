@@ -120,7 +120,7 @@
   position: relative;
   display: block;
   width: rem(25);
-  height: 1px;
+  height: rem(1);
   background-color: $black2;
   transition: 0.5s;
 }
@@ -189,8 +189,8 @@
 }
 
 .header__drawer-item {
-  border-bottom: 1px solid $blue;
-  border-top: 1px solid $blue;
+  border-bottom: rem(1) solid $blue;
+  border-top: rem(1) solid $blue;
 }
 
 .header__drawer-item a {
