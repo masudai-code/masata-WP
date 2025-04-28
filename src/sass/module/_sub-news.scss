@@ -12,6 +12,14 @@
   }
 }
 
+.sub-news__sidebar {
+  @include mq("md") {
+    position: sticky;
+    top: rem(200);
+    height: fit-content;
+  }
+}
+
 .sub-news__menu {
   margin-left: rem(14);
   @include mq("md") {
