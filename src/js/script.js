@@ -35,6 +35,40 @@ jQuery(function ($) {
       }
     });
 
+    // スマホ表示時のみsub-news-list__textの文字数を制限する関数
+    function truncateNewsText() {
+      if (window.matchMedia("(max-width: 767px)").matches) {
+        // スマホ表示時のみ実行
+        $(".sub-news-list__text").each(function () {
+          const text = $(this).text();
+          if (text.length > 63) {
+            $(this).text(text.slice(0, 63) + "...");
+          }
+        });
+      } else {
+        // PC表示時は元のテキストを復元
+        $(".sub-news-list__text").each(function () {
+          const originalText = $(this).attr("data-original-text");
+          if (originalText) {
+            $(this).text(originalText);
+          }
+        });
+      }
+    }
+
+    // 初期表示時に元のテキストを保存
+    $(".sub-news-list__text").each(function () {
+      $(this).attr("data-original-text", $(this).text());
+    });
+
+    // 初期表示時にも実行
+    truncateNewsText();
+
+    // リサイズ時にも実行
+    $(window).on("resize", function () {
+      truncateNewsText();
+    });
+
     // FV
     const fv__swiper = new Swiper(".js-fv-swiper", {
       direction: "vertical",
