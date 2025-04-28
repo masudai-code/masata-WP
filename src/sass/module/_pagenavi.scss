@@ -5,6 +5,10 @@
   margin: 0 auto;
   width: 100%;
   margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(56);
+    margin: 0;
+  }
 }
 
 .wp-pagenavi {
