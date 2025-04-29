@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.sub-news-block__heading {
+}
+.sub-news-block__heading-text {
+  font-size: rem(18);
+  font-weight: $medium;
+  padding-left: rem(13);
+  padding-bottom: rem(12);
+  position: relative;
+  border-bottom: rem(1) solid $gray8;
+}
+
+.sub-news-block__heading-text::before {
+  content: "";
+  position: absolute;
+  bottom: rem(-1);
+  left: 0;
+  width: calc(125 / 315 * 100%);
+  height: rem(1);
+  background-color: $navy;
+}
+
+.sub-news-block__body {
+}
+.sub-news-block__text {
+  margin-top: rem(40);
+  font-size: rem(14);
+  line-height: calc(32 / 14);
+  @include mq("md") {
+    margin-top: rem(40);
+    font-size: rem(16);
+    line-height: calc(32 / 16);
+  }
+}
