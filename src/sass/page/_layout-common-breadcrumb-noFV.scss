@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.layout-common-breadcrumb-noFV {
+  margin-top: rem(90);
+  @include mq("md") {
+    margin-top: rem(200);
+  }
+}
