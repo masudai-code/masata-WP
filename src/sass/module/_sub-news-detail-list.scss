@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.sub-news-detail-list__list {
+  list-style: disc;
+  padding-left: rem(16);
+}
+.sub-news-detail-list__item {
+  margin-bottom: rem(5);
+  font-size: rem(14);
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
