@@ -3,6 +3,10 @@
 .sub-news-detail-list__list {
   list-style: disc;
   padding-left: rem(16);
+  @include mq("md") {
+    border-bottom: rem(1) solid $gray5;
+    padding-bottom: rem(44);
+  }
 }
 
 .sub-news-detail-list__item {
