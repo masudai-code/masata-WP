@@ -4,10 +4,16 @@
   list-style: disc;
   padding-left: rem(16);
 }
+
 .sub-news-detail-list__item {
   margin-bottom: rem(5);
   font-size: rem(14);
+  color: $black;
   @include mq("md") {
     font-size: rem(16);
   }
+}
+
+.sub-news-detail-list__item::marker {
+  color: $navy;
 }
