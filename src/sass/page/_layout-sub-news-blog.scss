@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.layout-sub-news-blog {
+  margin-top: rem(57);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
