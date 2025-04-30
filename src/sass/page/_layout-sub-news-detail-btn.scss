@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.layout-sub-news-detail-btn {
+  margin-top: rem(51);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}

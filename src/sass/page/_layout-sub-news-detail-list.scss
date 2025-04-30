@@ -2,6 +2,7 @@
 
 .layout-sub-news-detail-list {
   margin-top: rem(22);
+  margin-left: rem(2);
   @include mq("md") {
     margin-top: rem(72);
   }
