@@ -3,6 +3,7 @@
 .sub-news-detail {
   @include mq("md") {
     display: flex;
+    gap: rem(91);
   }
 }
 
@@ -11,8 +12,10 @@
   padding-right: rem(30);
   @include mq("md") {
     padding-left: rem(25);
-    padding-right: rem(25);
-    max-width: rem(768.47);
+    // padding-right: rem(25);
+    padding-right: 0;
+    margin-right: 0;
+    max-width: rem(743.47);
   }
 }
 
