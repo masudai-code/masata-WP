@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.sub-news-container__inner {
+  @include mq("md") {
+    display: flex;
+    gap: rem(91);
+    max-width: rem(1207.74);
+  }
+}

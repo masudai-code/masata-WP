@@ -2,20 +2,18 @@
 
 .sub-news-detail {
   @include mq("md") {
-    display: flex;
-    gap: rem(91);
+    // display: flex;
+    // gap: rem(91);
   }
 }
 
-.sub-news-detail__inner.inner {
+.sub-news-detail__inner {
   padding-left: rem(30);
   padding-right: rem(30);
   @include mq("md") {
-    padding-left: rem(25);
-    // padding-right: rem(25);
+    padding-left: 0;
     padding-right: 0;
-    margin-right: 0;
-    max-width: rem(743.47);
+    max-width: rem(718.47);
   }
 }
 

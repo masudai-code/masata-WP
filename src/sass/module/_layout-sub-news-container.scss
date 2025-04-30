@@ -1,7 +1,7 @@
 @use "global" as *;
 
-.layout-sub-news-detail {
-  margin: rem(30) 0 rem(80);
+.layout-sub-news-container {
+  margin: rem(30) 0 rem(57);
   @include mq("md") {
     margin: rem(60) 0 rem(119);
   }

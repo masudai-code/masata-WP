@@ -8,6 +8,9 @@
 .common-btn.common-btn--box.sub-news-detail-btn__prev {
   padding-left: rem(39);
   padding-right: rem(24);
+  flex-shrink: 0;
+  align-items: center;
+  display: flex;
 }
 
 .common-btn.common-btn--box.sub-news-detail-btn__prev p::after,
