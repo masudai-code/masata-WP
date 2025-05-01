@@ -28,7 +28,11 @@
   font-weight: $medium;
   background-color: $navy2;
   padding: rem(15) 0 rem(14) rem(18);
+  @include mq("md") {
+    padding: rem(14) 0 rem(15) rem(18);
+  }
 }
+
 .sub-news-blog__article-list {
 }
 
@@ -42,6 +46,7 @@
   padding: rem(17.5) 0;
   margin: 0 rem(18);
   border-bottom: 1px solid $gray8;
+  gap: rem(18);
 }
 
 .sub-news-blog__article-item:last-child .sub-news-blog__article-link {
@@ -60,7 +65,6 @@
 }
 
 .sub-news-blog__article-content {
-  margin-left: rem(18);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -72,6 +76,12 @@
   color: $navy4;
   @include mq("md") {
     line-height: calc(24 / 12);
+  }
+}
+
+.sub-news-blog__article-date.common-date {
+  @include mq("md") {
+    font-size: rem(10);
   }
 }
 
