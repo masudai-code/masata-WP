@@ -5,10 +5,11 @@
     display: flex;
     gap: rem(91);
     max-width: rem(1207.74);
+    justify-content: space-between;
   }
 }
 
 .sub-news-container__inner.inner {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: rem(25);
+  padding-right: rem(25);
 }

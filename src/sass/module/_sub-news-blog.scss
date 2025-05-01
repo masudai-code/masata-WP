@@ -8,9 +8,10 @@
   padding-right: rem(15);
   @include mq("md") {
     padding-left: 0;
-    padding-right: rem(25);
+    padding-right: 0;
     margin-left: 0;
-    max-width: rem(325);
+    max-width: rem(300);
+    width: 100%;
   }
 }
 
