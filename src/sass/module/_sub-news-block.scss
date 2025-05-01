@@ -9,6 +9,9 @@
   padding-bottom: rem(7);
   position: relative;
   border-bottom: rem(1) solid $gray8;
+  @include mq("md") {
+    padding-bottom: rem(9);
+  }
 }
 
 .sub-news-block__heading-text::before {

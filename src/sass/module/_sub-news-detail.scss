@@ -56,13 +56,23 @@
 .sub-news-detail-list__date {
   margin-top: rem(9);
   display: block;
+  @include mq("md") {
+    margin-top: rem(19);
+  }
+}
+
+.sub-news-detail-list__date.common-date {
+  font-size: rem(10);
+  @include mq("md") {
+    font-size: rem(11);
+  }
 }
 
 .sub-news-detail__image {
   margin-top: rem(40);
   width: 100%;
   @include mq("md") {
-    margin-top: rem(43);
+    margin-top: rem(41);
   }
 }
 

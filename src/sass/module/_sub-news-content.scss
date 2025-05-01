@@ -11,7 +11,7 @@
   padding: rem(7) 0 rem(9) rem(11);
   @include mq("md") {
     font-size: rem(22);
-    padding: rem(8) 0 rem(14) rem(10);
+    padding: rem(4) 0 rem(11) rem(14);
   }
 }
 
@@ -44,6 +44,9 @@
 
 .sub-news-content__text--first {
   margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(39);
+  }
 }
 
 .sub-news-content__text--second {

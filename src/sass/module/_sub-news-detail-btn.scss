@@ -40,4 +40,7 @@
 }
 
 .sub-news-detail-btn__next {
+  @include mq("md") {
+    margin-right: rem(11);
+  }
 }
