@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.sub-news-extra-list__list {
+  list-style: disc;
+  padding-left: rem(17);
+  @include mq("md") {
+    border-bottom: rem(1) solid $gray5;
+    padding-bottom: rem(44);
+  }
+}
+
+.sub-news-extra-list__item {
+  font-size: rem(14);
+}
+
+
+.sub-news-extra-list__item::marker {
+  color: $navy;
+}

@@ -39,7 +39,7 @@
 }
 
 .sub-news-detail-list__text {
-  margin-top: rem(10);
+  margin-top: rem(11);
   font-size: rem(18);
   font-weight: $medium;
   line-height: calc(30 / 18);
@@ -54,10 +54,12 @@
 }
 
 .sub-news-detail-list__date {
+  margin-top: rem(9);
+  display: block;
 }
 
 .sub-news-detail__image {
-  margin-top: rem(42);
+  margin-top: rem(40);
   width: 100%;
   @include mq("md") {
     margin-top: rem(43);

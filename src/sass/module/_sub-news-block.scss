@@ -6,7 +6,7 @@
   font-size: rem(18);
   font-weight: $medium;
   padding-left: rem(13);
-  padding-bottom: rem(12);
+  padding-bottom: rem(7);
   position: relative;
   border-bottom: rem(1) solid $gray8;
 }
@@ -24,12 +24,18 @@
 .sub-news-block__body {
 }
 .sub-news-block__text {
-  margin-top: rem(40);
   font-size: rem(14);
   line-height: calc(32 / 14);
   @include mq("md") {
-    margin-top: rem(40);
     font-size: rem(16);
     line-height: calc(32 / 16);
   }
+}
+
+.sub-news-block__text--first {
+  margin-top: rem(39);
+}
+
+.sub-news-block__text--second {
+  margin-top: rem(32);
 }
