@@ -14,7 +14,8 @@
   text-align: center;
   width: 100%;
   @include mq("md") {
-    padding-left: rem(175);
+    // padding-left: rem(175);
+    padding-left: calc(175px - (1440px - 100vw) * 0.15);
     width: calc(calc(620 / 1440) * 100%);
     text-align: left;
     display: flex;

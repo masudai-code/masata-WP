@@ -29,6 +29,7 @@
 }
 
 .fv-swiper {
+  min-height: inherit;
   position: relative;
   height: calc(100% - (rem(20) + rem(90)));
   @include mq("md") {
@@ -58,6 +59,10 @@
   @include mq("md") {
     aspect-ratio: 1034 / 780;
   }
+}
+
+.fv__content {
+  min-height: inherit;
 }
 
 .fv__title {
