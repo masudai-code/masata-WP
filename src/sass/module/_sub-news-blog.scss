@@ -99,6 +99,9 @@
   margin: 0 rem(18);
   display: block;
   border-bottom: 1px solid $gray8;
+  @include mq("md") {
+    padding: rem(17) 0;
+  }
 }
 
 .sub-news-blog__archive-item:last-child .sub-news-blog__archive-link {
