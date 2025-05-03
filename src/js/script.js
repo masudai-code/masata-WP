@@ -73,6 +73,24 @@ jQuery(function ($) {
       truncateNewsText();
     });
 
+    // sub-news-blog__article-textの文字数を制限する関数
+    function truncateArticleText() {
+      $(".sub-news-blog__article-text").each(function () {
+        const text = $(this).text();
+        if (text.length > 65) {
+          $(this).text(text.slice(0, 65) + "...");
+        }
+      });
+    }
+
+    // 初期表示時に実行
+    truncateArticleText();
+
+    // リサイズ時にも実行
+    $(window).on("resize", function () {
+      truncateArticleText();
+    });
+
     // FV
     const fv__swiper = new Swiper(".js-fv-swiper", {
       direction: "vertical",
