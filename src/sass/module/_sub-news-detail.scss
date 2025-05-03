@@ -38,6 +38,14 @@
   }
 }
 
+.sub-news-detail-list__category a {
+  transition: opacity 0.3s;
+}
+
+.sub-news-detail-list__category a:hover {
+  opacity: 0.7;
+}
+
 .sub-news-detail-list__text {
   margin-top: rem(11);
   padding-right: rem(21);
@@ -85,4 +93,12 @@
   @include mq("md") {
     aspect-ratio: 718.47 / 380;
   }
+}
+
+.sub-news-extra-list__item a {
+  transition: opacity 0.3s;
+}
+
+.sub-news-extra-list__item a:hover {
+  opacity: 0.7;
 }
