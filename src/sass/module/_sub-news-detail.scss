@@ -40,13 +40,15 @@
 
 .sub-news-detail-list__text {
   margin-top: rem(11);
+  padding-right: rem(21);
   font-size: rem(18);
   font-weight: $medium;
   line-height: calc(30 / 18);
-  max-width: rem(294);
+  // max-width: rem(294);
   width: 100%;
   @include mq("md") {
     margin-top: rem(19);
+    padding-right: 0;
     font-size: rem(26);
     line-height: calc(50 / 26);
     max-width: rem(718.47);
