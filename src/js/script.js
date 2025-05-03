@@ -279,5 +279,13 @@ jQuery(function ($) {
       },
       allowTouchMove: false,
     });
+
+    // current-itemの文字数を10文字に制限
+    document.querySelectorAll(".current-item").forEach(function (el) {
+      const text = el.textContent;
+      if (text.length > 10) {
+        el.textContent = text.slice(0, 10) + "...";
+      }
+    });
   });
 });
