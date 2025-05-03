@@ -125,6 +125,14 @@ jQuery(function ($) {
       }
     });
 
+    // sub-works-list__item-titleの文字数を48文字に制限
+    document.querySelectorAll(".sub-works-list__item-title").forEach(function (el) {
+      const text = el.textContent;
+      if (text.length > 49) {
+        el.textContent = text.slice(0, 49) + "...";
+      }
+    });
+
     // プラグインを登録
     gsap.registerPlugin(ScrollTrigger);
 

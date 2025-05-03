@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.layout-sub-works {
+  margin: rem(30) 0 rem(80);
+  @include mq("md") {
+    margin: rem(60) 0 rem(120);
+  }
+}

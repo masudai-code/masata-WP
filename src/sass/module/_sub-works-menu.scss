@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.sub-works-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(18);
+  justify-content: space-between;
+  width: 100%;
+  max-width: calc(calc(238 / 295) * 100%);
+  @include mq("md") {
+    max-width: none;
+    flex-direction: column;
+    gap: rem(19);
+  }
+}
+
+.sub-works-menu__item {
+  font-size: rem(12);
+  font-weight: $medium;
+  color: $gray2;
+  cursor: pointer;
+  @include mq("md") {
+    font-size: rem(14);
+  }
+}
+
+.sub-works-menu__item.is-active {
+  font-size: rem(12);
+  color: $black;
+  position: relative;
+  @include mq("md") {
+    font-size: rem(14);
+  }
+}
+
+.sub-works-menu__item.is-active::before {
+  content: "";
+  position: absolute;
+  left: rem(-13);
+  top: 50%;
+  transform: translateY(-50%);
+  width: rem(8);
+  height: rem(8);
+  background-image: url(./../images/common/tab-rectangle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

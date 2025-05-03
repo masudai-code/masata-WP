@@ -1,10 +1,10 @@
 @use "global" as *;
 
-.works-list {
+.sub-works-list {
   
 }
 
-.works-list__item {
+.sub-works-list__item {
   border-bottom: rem(1) solid $gray5;
   padding-bottom: rem(30);
   @include mq("md") {
@@ -12,7 +12,7 @@
   }
 }
 
-.works-list__item a {
+.sub-works-list__item a {
   display: flex;
   gap: rem(18);
   @include mq("md") {
@@ -20,16 +20,16 @@
   }
 }
 
-.works-list__item-image {
-  width: calc(calc(120 / 295) * 100%);
+.sub-works-list__item-image {
+  width: calc(calc(130 / 295) * 100%);
   @include mq("md") {
     width: calc(calc(290 / 1020) * 100%);
   }
 }
 
-.works-list__item-image img {
+.sub-works-list__item-image img {
   width: 100%;
-  aspect-ratio: 120/90;
+  aspect-ratio: 130/100;
   object-fit: cover;
   transition: opacity 0.3s ease;
   @include mq("md") {
@@ -37,15 +37,15 @@
   }
 }
 
-.works-list__item:hover .works-list__item-image img {
+.sub-works-list__item:hover .sub-works-list__item-image img {
   opacity: 0.7;
 }
 
-.works-list__item-content {
+.sub-works-list__item-content {
   flex: 1;
 }
 
-.works-list__item-categories {
+.sub-works-list__item-categories {
   display: flex;
   flex-wrap: wrap;
   column-gap: rem(6);
@@ -56,7 +56,7 @@
   }
 }
 
-.works-list__item-category {
+.sub-works-list__item-category {
   font-size: rem(10);
   color: $gray;
   font-weight: $medium;
@@ -73,7 +73,7 @@
   }
 }
 
-.works-list__item-title {
+.sub-works-list__item-title {
   font-size: rem(14);
   font-weight: $medium;
   line-height: calc(28 / 14);
@@ -89,11 +89,11 @@
   }
 }
 
-.works-list__item:hover .works-list__item-title {
+.sub-works-list__item:hover .sub-works-list__item-title {
   background-size: 100% rem(1);
 }
 
-.works-list__item-text {
+.sub-works-list__item-text {
   @include mq("md") {
     position: relative;
     line-height: calc(38 / 16);
@@ -104,7 +104,7 @@
   }
 }
 
-.works-list__item-text::after {
+.sub-works-list__item-text::after {
   content: "...";
   position: absolute;
   right: 0;
@@ -112,7 +112,7 @@
   color: $gray;
 }
 
-.works-list__item-date {
+.sub-works-list__item-date {
   display: block;
   margin-top: rem(10);
   @include mq("md") {

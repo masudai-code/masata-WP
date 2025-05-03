@@ -23,6 +23,14 @@
   }
 }
 
+.works__list-wrap {
+  display: grid;
+  gap: rem(30);
+  @include mq("md") {
+    gap: rem(50);
+  }
+}
+
 .works__btn-wrap {
   text-align: right;
   margin-top: rem(32);

@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.sub-works__inner {
+  padding-left: rem(40);
+  padding-right: rem(40);
+}
+
+.sub-works__wrapper {
+  @include mq("md") {
+    display: flex;
+    gap: rem(94);
+  }
+}
+
+.sub-works__sidebar {
+  @include mq("md") {
+    position: sticky;
+    top: rem(200);
+    height: fit-content;
+  }
+}
+
+.sub-works__menu {
+  margin-left: rem(14);
+  @include mq("md") {
+    margin-left: rem(16);
+  }
+}
+
+.sub-works__list-wrap {
+  display: grid;
+  gap: rem(30);
+  margin-top: rem(38);
+  @include mq("md") {
+    gap: rem(50);
+    margin-top: 0;
+  }
+}
