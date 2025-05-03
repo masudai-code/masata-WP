@@ -47,6 +47,11 @@
   margin: 0 rem(18);
   border-bottom: 1px solid $gray8;
   gap: rem(18);
+  transition: opacity 0.3s;
+}
+
+.sub-news-blog__article-link:hover {
+  opacity: 0.7;
 }
 
 .sub-news-blog__article-item:last-child .sub-news-blog__article-link {
@@ -105,7 +110,11 @@
   }
 }
 
-.sub-news-blog__article-link:hover {
+.sub-news-blog__archive-link {
+  transition: opacity 0.3s;
+}
+
+.sub-news-blog__archive-link:hover {
   opacity: 0.7;
 }
 
@@ -130,4 +139,9 @@
   margin: 0 rem(18);
   display: block;
   border-bottom: 1px solid $gray8;
+  transition: opacity 0.3s;
+}
+
+.sub-news-blog__category-link:hover {
+  opacity: 0.7;
 }
