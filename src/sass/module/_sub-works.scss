@@ -3,12 +3,16 @@
 .sub-works__inner {
   padding-left: rem(40);
   padding-right: rem(40);
+  @include mq("md") {
+    max-width: rem(1148);
+  }
 }
 
 .sub-works__wrapper {
   @include mq("md") {
     display: flex;
-    gap: rem(94);
+    // gap: rem(94);
+    justify-content: space-between;
   }
 }
 
@@ -24,6 +28,15 @@
   margin-left: rem(14);
   @include mq("md") {
     margin-left: rem(16);
+  }
+}
+
+.sub-works__content {
+  @include mq("md") {
+    border-left: rem(1) solid $gray5;
+    padding: 0 0 0 rem(60);
+    width: 100%;
+    max-width: rem(836);
   }
 }
 

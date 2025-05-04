@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .sub-works-list {
-  
 }
 
 .sub-works-list__item {
@@ -23,7 +22,7 @@
 .sub-works-list__item-image {
   width: calc(calc(130 / 295) * 100%);
   @include mq("md") {
-    width: calc(calc(290 / 1020) * 100%);
+    width: 20.646%;
   }
 }
 
@@ -33,7 +32,7 @@
   object-fit: cover;
   transition: opacity 0.3s ease;
   @include mq("md") {
-    aspect-ratio: 290/229;
+    aspect-ratio: 160/160;
   }
 }
 
@@ -85,7 +84,11 @@
   display: inline;
   transition: background-size 0.5s;
   @include mq("md") {
-    font-size: rem(24);
+    font-size: rem(18);
+    line-height: calc(32 / 18);
+    width: 29em;
+    word-wrap: break-word;
+    display: block;
   }
 }
 
