@@ -120,8 +120,8 @@ jQuery(function ($) {
     // works-list__item-titleの文字数を全角24文字(半角45文字)に制限
     document.querySelectorAll(".works-list__item-title").forEach(function (el) {
       const text = el.textContent;
-      if (text.length > 49) {
-        el.textContent = text.slice(0, 49) + "...";
+      if (text.length > 51) {
+        el.textContent = text.slice(0, 51) + "...";
       }
     });
 
@@ -131,7 +131,7 @@ jQuery(function ($) {
       .forEach(function (el) {
         const text = el.textContent;
         const isPc = window.matchMedia("(min-width: 768px)").matches;
-        const maxLength = isPc ? 92 : 49;
+        const maxLength = isPc ? 92 : 51;
         if (text.length > maxLength) {
           el.textContent = text.slice(0, maxLength) + "...";
         }
