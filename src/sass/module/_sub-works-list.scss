@@ -42,6 +42,9 @@
 
 .sub-works-list__item-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .sub-works-list__item-categories {
@@ -119,6 +122,7 @@
   display: block;
   margin-top: rem(10);
   @include mq("md") {
-    margin-top: rem(18);
+    // margin-top: rem(18);
+    margin-top: 0;
   }
 }
