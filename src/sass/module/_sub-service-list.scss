@@ -12,14 +12,15 @@
 
 .sub-service-list__content-wrap {
   background-color: $gray3;
-  padding-top: rem(60);
+  // padding-top: rem(60);
+  padding: 60px calc(50vw - 53.57%) 0;
   margin-top: rem(49);
   margin-left: calc(50% - 50vw);
   width: 100vw;
   @include mq("md") {
     display: flex;
     margin-left: 0;
-    padding-top: 0;
+    padding: 0;
     margin-top: rem(123);
     width: 100%;
   }
