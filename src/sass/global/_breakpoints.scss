@@ -25,7 +25,6 @@ $mediaquerys: (
     lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
     xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
   );
-
 } @else {
   $breakpoints: (
     xl: 1440,
@@ -39,8 +38,6 @@ $mediaquerys: (
     lg: "screen and (max-width: #{map-get($breakpoints,'lg')}px)",
     xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
   );
-
-
 }
 
 // @include mq(){}で書くとブレークポイントが反映される（初期値はmd）
@@ -49,7 +46,6 @@ $mediaquerys: (
     @content;
   }
 }
-
 
 @if $startFrom == sp {
   //pcで表示
