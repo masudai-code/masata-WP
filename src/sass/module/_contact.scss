@@ -20,7 +20,8 @@
   @include mq("md") {
     // padding-left: rem(175);
     // padding-left: calc(175px - (1440px - 100vw) * 0.15);
-    width: calc(calc(620 / 1440) * 100%);
+    // width: calc(calc(620 / 1440) * 100%);
+    width: 40.91%;
     text-align: left;
     display: flex;
     justify-content: center;

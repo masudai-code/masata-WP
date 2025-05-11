@@ -29,7 +29,6 @@
 }
 
 .fv-swiper {
-  min-height: inherit;
   position: relative;
   height: calc(100% - (rem(20) + rem(90)));
   @include mq("md") {
