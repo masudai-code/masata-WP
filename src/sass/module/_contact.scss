@@ -2,6 +2,7 @@
 
 .contact {
   overflow: hidden;
+  background-color: $blue;
 }
 
 .contact__wrap {
@@ -14,7 +15,6 @@
 
 .contact__content {
   padding: rem(80) 0;
-  background-color: $blue;
   text-align: center;
   width: 100%;
   @include mq("md") {

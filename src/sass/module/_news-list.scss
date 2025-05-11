@@ -17,8 +17,13 @@
   margin-top: rem(37);
   @include mq("md") {
     margin-top: 0;
-    padding-top: 0;
     border-top: none;
+  }
+}
+
+.news-list__item:first-child a {
+  @include mq("md") {
+    padding-top: 0;
   }
 }
 
