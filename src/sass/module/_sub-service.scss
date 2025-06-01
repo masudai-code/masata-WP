@@ -1,5 +1,12 @@
 @use "global" as *;
 
+.sub-service {
+  margin: rem(49) 0 rem(80);
+  @include mq("md") {
+    margin: rem(123) 0 rem(123);
+  }
+}
+
 .sub-service__inner {
   @include mq("md") {
     max-width: rem(1250);
