@@ -22,8 +22,14 @@
 
 .sub-news__menu {
   margin-left: rem(14);
+  gap: rem(13);
+  justify-content: space-between;
+  width: 100%;
+  max-width: calc(calc(246 / 295) * 100%);
   @include mq("md") {
     margin-left: rem(16);
+    max-width: none;
+    gap: rem(19);
   }
 }
 
