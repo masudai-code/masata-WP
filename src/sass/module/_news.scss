@@ -7,6 +7,12 @@
   }
 }
 
+.news__header {
+  @include mq("md") {
+    padding-top: rem(16);
+  }
+}
+
 .news__sidebar {
   @include mq("md") {
     margin-top: rem(16);
