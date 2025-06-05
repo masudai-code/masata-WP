@@ -35,11 +35,11 @@ jQuery(function ($) {
       }
     });
 
-    // スマホ表示時のみsub-news-list__textの文字数を制限する関数
+    // スマホ表示時のみnews-list__textの文字数を制限する関数
     function truncateNewsText() {
       if (window.matchMedia("(max-width: 767px)").matches) {
         // スマホ表示時のみ実行
-        $(".sub-news-list__text").each(function () {
+        $(".news-list__text").each(function () {
           const text = $(this).text();
           if (text.length > 63) {
             $(this).text(text.slice(0, 63) + "...");
@@ -47,7 +47,7 @@ jQuery(function ($) {
         });
       } else {
         // PC表示時は46文字で制限
-        $(".sub-news-list__text").each(function () {
+        $(".news-list__text").each(function () {
           const originalText = $(this).attr("data-original-text");
           if (originalText) {
             if (originalText.length > 69) {
@@ -61,7 +61,7 @@ jQuery(function ($) {
     }
 
     // 初期表示時に元のテキストを保存
-    $(".sub-news-list__text").each(function () {
+    $(".news-list__text").each(function () {
       $(this).attr("data-original-text", $(this).text());
     });
 
@@ -253,25 +253,6 @@ jQuery(function ($) {
         start: "top 70%", // アニメーション開始位置
       },
     });
-
-    // sub-news__listを上からふわっと出現
-    gsap.fromTo(
-      ".sub-news-list__item", // アニメーションさせる要素
-      {
-        y: -50, // アニメーション開始前の縦位置(上に50px)
-        autoAlpha: 0, // アニメーション開始前は透明
-      },
-      {
-        y: 0, // アニメーション後の縦位置(元の位置)
-        autoAlpha: 1, // アニメーション後に出現(透過率0)
-        duration: 1.5, // アニメーションの時間
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: ".sub-news__list", // アニメーションが始まるトリガーとなる要素
-          start: "top 70%", // アニメーションの開始位置
-        },
-      }
-    );
 
     // company__swiper(about)
     const companySwiper = new Swiper(".js-company-swiper", {

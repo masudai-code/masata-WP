@@ -34,11 +34,13 @@
 }
 
 .sub-news__content {
+    margin-top: rem(37);
   @include mq("md") {
     border-left: rem(1) solid $gray5;
     padding: 0 0 0 rem(60);
     width: 100%;
     max-width: rem(836);
+    margin-top: 0;
   }
 }
 
