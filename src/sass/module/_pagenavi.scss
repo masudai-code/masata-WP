@@ -1,14 +1,17 @@
 @use "global" as *;
 
-.pagenavi__inner {
-  max-width: rem(307);
-  margin: 0 auto;
-  width: 100%;
+.pagenavi {
   margin-top: rem(40);
+  margin: 0 auto;
   @include mq("md") {
     margin-top: rem(55);
     margin: 0;
   }
+}
+
+.pagenavi__inner {
+  max-width: rem(307);
+  width: 100%;
 }
 
 .wp-pagenavi {

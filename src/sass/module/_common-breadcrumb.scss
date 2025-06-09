@@ -2,7 +2,7 @@
 
 .common-breadcrumb__inner {
   text-align: right;
-  padding-right: rem(10);
+  padding-right: rem(11);
   margin-right: auto;
   font-size: rem(10);
   font-family: $third-font-family;
@@ -12,8 +12,33 @@
   }
 }
 
-.common-breadcrumb__separator {
+.common-breadcrumb__inner a {
+  color: $gray2;
 }
+
+.common-breadcrumb__separator {
+  position: relative;
+  display: inline-block;
+  width: rem(20);
+  height: rem(1);
+  margin: 0 rem(7);
+  vertical-align: middle;
+}
+
+.common-breadcrumb__separator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: rem(0.5);
+  background-color: $gray2;
+  transform: translateY(-50%);
+  @include mq("md") {
+    height: rem(1);
+  }
+}
+
 .current-item {
   color: $black2;
 }
