@@ -22,32 +22,25 @@
 
 .sub-news__menu {
   margin-left: rem(14);
-  gap: rem(13);
-  justify-content: space-between;
-  width: 100%;
+  gap: rem(13) rem(54);
   max-width: calc(calc(246 / 295) * 100%);
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
   @include mq("md") {
     margin-left: rem(16);
     max-width: none;
     gap: rem(19);
+    grid-template-columns: 1fr;
   }
 }
 
 .sub-news__content {
-    margin-top: rem(37);
+  margin-top: rem(37);
   @include mq("md") {
     border-left: rem(1) solid $gray5;
     padding: 0 0 0 rem(60);
     width: 100%;
     max-width: rem(836);
     margin-top: 0;
-  }
-}
-
-.sub-news__btn-wrap {
-  text-align: right;
-  margin-top: rem(39);
-  @include mq("md") {
-    margin-top: rem(34);
   }
 }
