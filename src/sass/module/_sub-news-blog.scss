@@ -37,8 +37,10 @@
 }
 
 .sub-news-blog__article-item {
-  width: 100%;
-  max-width: rem(345);
+  @include mq("md") {
+    width: 100%;
+    max-width: rem(345);
+  }
 }
 
 .sub-news-blog__article-link {
@@ -94,8 +96,10 @@
 }
 
 .sub-news-blog__archive-item {
-  width: 100%;
-  max-width: rem(345);
+  @include mq("md") {
+    width: 100%;
+    max-width: rem(345);
+  }
 }
 
 .sub-news-blog__archive-link {
@@ -125,8 +129,10 @@
 .sub-news-blog__category-list {
 }
 .sub-news-blog__category-item {
-  width: 100%;
-  max-width: rem(345);
+  @include mq("md") {
+    width: 100%;
+    max-width: rem(345);
+  }
 }
 
 .sub-news-blog__category-item:last-child .sub-news-blog__category-link {
