@@ -1,8 +1,0 @@
-@use "global" as *;
-
-.layout-sub-news-extra-list {
-  margin-top: rem(21);
-  @include mq("md") {
-    margin-top: rem(70);
-  }
-}
