@@ -17,7 +17,7 @@
   }
 }
 
-.sub-news-detail__wrapper {
+.sub-news-detail__wrap {
 }
 .sub-news-detail__content {
 }
@@ -78,7 +78,7 @@
   }
 }
 
-.sub-news-detail__image {
+.sub-news-detail__mv {
   margin-top: rem(40);
   width: 100%;
   @include mq("md") {
@@ -86,7 +86,7 @@
   }
 }
 
-.sub-news-detail__image img {
+.sub-news-detail__mv img {
   aspect-ratio: 315 / 176;
   width: 100%;
   object-fit: cover;
