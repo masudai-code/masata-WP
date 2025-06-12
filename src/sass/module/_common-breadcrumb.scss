@@ -21,8 +21,11 @@
   display: inline-block;
   width: rem(20);
   height: rem(1);
-  margin: 0 rem(7);
+  margin: 0 rem(7.6);
   vertical-align: middle;
+  @include mq("md") {
+    margin: 0 rem(6.6);
+  }
 }
 
 .common-breadcrumb__separator::before {
@@ -41,4 +44,5 @@
 
 .current-item {
   color: $black2;
+  font-family: $third-font-family;
 }

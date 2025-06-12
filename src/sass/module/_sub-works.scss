@@ -26,8 +26,15 @@
 
 .sub-works__menu {
   margin-left: rem(14);
+  gap: rem(13) rem(54);
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  max-width: calc(calc(238 / 295) * 100%);
   @include mq("md") {
     margin-left: rem(16);
+    max-width: none;
+    gap: rem(19);
+    grid-template-columns: 1fr;
   }
 }
 
