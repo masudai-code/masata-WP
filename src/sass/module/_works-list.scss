@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .works-list {
-  
 }
 
 .works-list__item {
@@ -27,6 +26,13 @@
   }
 }
 
+.works-list__item-image--sub {
+  width: 44.07%;
+  @include mq("md") {
+    width: 20.646%;
+  }
+}
+
 .works-list__item-image img {
   width: 100%;
   aspect-ratio: 120/90;
@@ -34,6 +40,13 @@
   transition: opacity 0.3s ease;
   @include mq("md") {
     aspect-ratio: 290/229;
+  }
+}
+
+.works-list__item-image--sub img {
+  aspect-ratio: 130/100;
+  @include mq("md") {
+    aspect-ratio: 160/160;
   }
 }
 
@@ -86,6 +99,16 @@
   transition: background-size 0.5s;
   @include mq("md") {
     font-size: rem(24);
+  }
+}
+
+.works-list__item-title--sub {
+  @include mq("md") {
+    font-size: rem(18);
+    line-height: calc(32 / 18);
+    width: 29em;
+    word-wrap: break-word;
+    display: block;
   }
 }
 
