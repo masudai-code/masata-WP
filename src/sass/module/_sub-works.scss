@@ -26,7 +26,7 @@
 
 .sub-works__menu {
   margin-left: rem(14);
-  gap: rem(13) rem(54);
+  gap: rem(14) rem(58);
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   max-width: calc(calc(238 / 295) * 100%);
@@ -49,7 +49,7 @@
 
 .sub-works__list-wrap {
   display: grid;
-  gap: rem(30);
+  gap: rem(20);
   margin-top: rem(38);
   @include mq("md") {
     gap: rem(50);

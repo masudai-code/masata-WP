@@ -19,6 +19,14 @@
   }
 }
 
+.works-list__item--sub {
+  padding-bottom: rem(17.5);
+}
+
+.works-list__item--sub a {
+  gap: rem(15);
+}
+
 .works-list__item-image {
   width: calc(calc(120 / 295) * 100%);
   @include mq("md") {
@@ -84,6 +92,10 @@
     margin-bottom: rem(27);
     line-height: 1;
   }
+}
+
+.works-list__item-category--sub {
+  margin-bottom: rem(10);
 }
 
 .works-list__item-title {
