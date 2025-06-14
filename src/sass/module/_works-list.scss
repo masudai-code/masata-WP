@@ -25,6 +25,9 @@
 
 .works-list__item--sub a {
   gap: rem(15);
+  @include mq("md") { 
+  gap: rem(30);
+  }
 }
 
 .works-list__item-image {
