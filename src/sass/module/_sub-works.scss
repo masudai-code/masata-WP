@@ -52,7 +52,7 @@
   gap: rem(20);
   margin-top: rem(38);
   @include mq("md") {
-    gap: rem(50);
+    gap: rem(30);
     margin-top: 0;
   }
 }

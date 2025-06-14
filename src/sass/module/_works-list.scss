@@ -21,12 +21,15 @@
 
 .works-list__item--sub {
   padding-bottom: rem(17.5);
+  @include mq("md") {
+    padding-bottom: rem(30);
+  }
 }
 
 .works-list__item--sub a {
   gap: rem(15);
-  @include mq("md") { 
-  gap: rem(30);
+  @include mq("md") {
+    gap: rem(30);
   }
 }
 
