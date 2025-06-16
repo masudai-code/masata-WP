@@ -117,25 +117,66 @@ jQuery(function ($) {
       });
     });
 
-    // works-list__item-titleの文字数を全角24文字(半角45文字)に制限
-    document.querySelectorAll(".works-list__item-title").forEach(function (el) {
-      const text = el.textContent;
-      if (text.length > 51) {
-        el.textContent = text.slice(0, 51) + "...";
-      }
-    });
-
-    // sub-works-list__item-titleの文字数を48文字に制限
+    // works-list__item-titleの文字数を全角24文字(半角45文字)に制限（TOPページ用）
     document
-      .querySelectorAll(".sub-works-list__item-title")
+      .querySelectorAll(
+        ".works-list__item-title:not(.works-list__item-title--sub)"
+      )
       .forEach(function (el) {
         const text = el.textContent;
-        const isPc = window.matchMedia("(min-width: 768px)").matches;
-        const maxLength = isPc ? 92 : 51;
-        if (text.length > maxLength) {
-          el.textContent = text.slice(0, maxLength) + "...";
+        if (text.length > 49) {
+          el.textContent = text.slice(0, 49) + "...";
         }
       });
+
+    // works-list__item-title--subの文字数を制限（worksページ用）
+    function truncateWorksTitle() {
+      document
+        .querySelectorAll(".works-list__item-title--sub")
+        .forEach(function (el) {
+          const text = el.textContent;
+          const isPc = window.matchMedia("(min-width: 768px)").matches;
+
+          if (isPc) {
+            // PC表示時：35文字で改行、71文字以降は点々
+            if (text.length > 71) {
+              const firstLine = text.slice(0, 35);
+              const secondLine = text.slice(35, 71) + "...";
+              el.textContent = firstLine + "\n" + secondLine;
+            } else if (text.length > 35) {
+              // 35文字を超えるが71文字未満の場合：改行のみ
+              const firstLine = text.slice(0, 35);
+              const secondLine = text.slice(35);
+              el.textContent = firstLine + "\n" + secondLine;
+            }
+          } else {
+            // スマートフォン表示時：51文字で点々
+            if (text.length > 51) {
+              el.textContent = text.slice(0, 51) + "...";
+            }
+          }
+        });
+    }
+
+    // 初期表示時に実行
+    truncateWorksTitle();
+
+    // リサイズ時にも実行
+    $(window).on("resize", function () {
+      truncateWorksTitle();
+    });
+
+    // // sub-works-list__item-titleの文字数を48文字に制限
+    // document
+    //   .querySelectorAll(".sub-works-list__item-title")
+    //   .forEach(function (el) {
+    //     const text = el.textContent;
+    //     const isPc = window.matchMedia("(min-width: 768px)").matches;
+    //     const maxLength = isPc ? 92 : 51;
+    //     if (text.length > maxLength) {
+    //       el.textContent = text.slice(0, maxLength) + "...";
+    //     }
+    //   });
 
     // プラグインを登録
     gsap.registerPlugin(ScrollTrigger);

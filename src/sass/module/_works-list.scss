@@ -121,10 +121,11 @@
 }
 
 .works-list__item-title--sub {
+  min-width: rem(150);
   @include mq("md") {
     font-size: rem(18);
     line-height: calc(32 / 18);
-    width: 29em;
+    width: 30em;
     word-wrap: break-word;
     display: block;
   }
