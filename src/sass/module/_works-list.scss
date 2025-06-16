@@ -102,6 +102,10 @@
 
 .works-list__item-category--sub {
   margin-bottom: rem(10);
+  @include mq("md") {
+    padding: rem(6) rem(18);
+    margin-bottom: rem(29.5);
+  }
 }
 
 .works-list__item-title {
@@ -159,5 +163,11 @@
   margin-top: rem(10);
   @include mq("md") {
     margin-top: rem(18);
+  }
+}
+
+.works-list__item-date--sub {
+  @include mq("md") {
+    font-size: rem(10);
   }
 }
