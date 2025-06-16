@@ -33,6 +33,15 @@
   }
 }
 
+.works-list__item--detail {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.works-list__item--detail a {
+  flex-direction: column-reverse;
+}
+
 .works-list__item-image {
   width: calc(calc(120 / 295) * 100%);
   @include mq("md") {

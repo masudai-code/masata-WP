@@ -134,6 +134,11 @@ jQuery(function ($) {
       document
         .querySelectorAll(".works-list__item-title--sub")
         .forEach(function (el) {
+          // works-list__item--detailクラスを持つ親要素の場合は制限を適用しない
+          if (el.closest(".works-list__item--detail")) {
+            return;
+          }
+
           const text = el.textContent;
           const isPc = window.matchMedia("(min-width: 768px)").matches;
 
