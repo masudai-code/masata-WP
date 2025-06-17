@@ -144,6 +144,15 @@
   }
 }
 
+.works-list__item-title--detail {
+  font-size: rem(18);
+  font-weight: $medium;
+  line-height: calc(30 / 18);
+  @include mq("md") {
+    font-size: rem(26);
+  }
+}
+
 .works-list__item:hover .works-list__item-title {
   background-size: 100% rem(1);
 }
