@@ -56,3 +56,9 @@
     margin-top: 0;
   }
 }
+
+.sub-works-detail__post-wrap p {
+  margin-top: rem(42);
+  font-size: rem(14);
+  line-height: calc(32 / 14);
+}
