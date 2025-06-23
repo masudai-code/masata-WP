@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .sub-works__inner {
-  padding-left: rem(40);
-  padding-right: rem(40);
+  padding-left: rem(30);
+  padding-right: rem(30);
   @include mq("md") {
     max-width: rem(1148);
   }

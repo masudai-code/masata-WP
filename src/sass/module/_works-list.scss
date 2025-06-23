@@ -40,6 +40,7 @@
 
 .works-list__item--detail a {
   flex-direction: column-reverse;
+  gap: rem(34);
 }
 
 .works-list__item-image {
@@ -50,7 +51,7 @@
 }
 
 .works-list__item-image--sub {
-  width: 44.07%;
+  width: 100%;
   @include mq("md") {
     width: 20.646%;
   }
@@ -67,7 +68,7 @@
 }
 
 .works-list__item-image--sub img {
-  aspect-ratio: 130/100;
+  aspect-ratio: 315/176;
   @include mq("md") {
     aspect-ratio: 160/160;
   }
