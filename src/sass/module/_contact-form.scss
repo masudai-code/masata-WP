@@ -1,0 +1,168 @@
+@use "global" as *;
+
+.contact-form {
+  margin: rem(30) 0 rem(80);
+  @include mq("md") {
+    margin: rem(60) 0 rem(120);
+  }
+}
+
+.contact-form__inner {
+}
+
+.contact-form__description {
+  font-size: rem(14);
+  line-height: calc(32 / 14);
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: calc(38 / 16);
+  }
+}
+
+.contact-form__body {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(100);
+  }
+}
+
+.contact-form__group {
+  margin-top: rem(30);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.contact-form__label {
+  display: block;
+  font-size: rem(14);
+  font-weight: $medium;
+  margin-bottom: rem(8);
+  @include mq("md") {
+    font-size: rem(16);
+    margin-bottom: rem(12);
+  }
+}
+
+// 必須マークの赤色スタイル
+.contact-form__label span:first-of-type {
+  color: #e74c3c;
+  margin-left: rem(4);
+}
+
+// 補足説明のスタイル
+.contact-form__note,
+.contact-form__required {
+  display: block;
+  font-size: rem(12);
+  color: #666;
+  font-weight: normal;
+  margin-top: rem(4);
+  @include mq("md") {
+    font-size: rem(13);
+    margin-top: rem(6);
+  }
+}
+
+.contact-form__input,
+.contact-form__select,
+.contact-form__textarea {
+  width: 100%;
+  padding: rem(12) rem(16);
+  border: rem(1) solid #ddd;
+  border-radius: rem(4);
+  font-size: rem(14);
+  transition: border-color 0.3s;
+  @include mq("md") {
+    padding: rem(16) rem(20);
+    font-size: rem(16);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $blue;
+  }
+}
+
+.contact-form__textarea {
+  min-height: rem(120);
+  resize: vertical;
+  @include mq("md") {
+    min-height: rem(160);
+  }
+}
+
+.contact-form__select-wrap {
+  position: relative;
+}
+
+.contact-form__select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right rem(12) center;
+  background-repeat: no-repeat;
+  background-size: rem(16) rem(16);
+  padding-right: rem(40);
+}
+
+.contact-form__checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: rem(14);
+  cursor: pointer;
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+
+.contact-form__checkbox {
+  margin-right: rem(8);
+  width: rem(16);
+  height: rem(16);
+  @include mq("md") {
+    width: rem(18);
+    height: rem(18);
+  }
+}
+
+.contact-form__button-wrap {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(60);
+  }
+}
+
+.contact-form__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: rem(16) rem(32);
+  background-color: $blue;
+  color: $white;
+  border: none;
+  border-radius: rem(4);
+  font-size: rem(16);
+  font-weight: $medium;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  @include mq("md") {
+    padding: rem(20) rem(40);
+    font-size: rem(18);
+  }
+
+  &:hover {
+    background-color: darken($blue, 10%);
+  }
+}
+
+.contact-form__button-icon {
+  width: rem(16);
+  height: rem(16);
+  margin-right: rem(8);
+  @include mq("md") {
+    width: rem(18);
+    height: rem(18);
+    margin-right: rem(10);
+  }
+}
