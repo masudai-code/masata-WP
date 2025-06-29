@@ -107,18 +107,39 @@
   align-items: center;
   font-size: rem(14);
   cursor: pointer;
+  position: relative;
   @include mq("md") {
     font-size: rem(16);
   }
 }
 
 .contact-form__checkbox {
-  margin-right: rem(8);
-  width: rem(16);
-  height: rem(16);
-  @include mq("md") {
-    width: rem(18);
-    height: rem(18);
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+
+  // チェックボックスの擬似要素
+  & + .contact-form__checkbox-label::before {
+    content: "";
+    display: inline-block;
+    width: rem(17);
+    height: rem(17);
+    border: rem(1) solid $gray5;
+    border-radius: rem(2);
+    margin-right: rem(8);
+    background-color: $white;
+    flex-shrink: 0;
+  }
+
+  // チェックされた時のスタイル
+  &:checked + .contact-form__checkbox-label::before {
+    background-color: $gray5;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+    background-size: rem(12) rem(12);
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
