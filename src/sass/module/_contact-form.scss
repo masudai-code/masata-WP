@@ -70,15 +70,19 @@
     padding: rem(16) rem(20);
     font-size: rem(16);
   }
+}
 
-  &:focus {
-    outline: none;
-    border-color: $blue;
-  }
+.contact-form__input:focus,
+.contact-form__select:focus,
+.contact-form__textarea:focus {
+  outline: none;
+  border-color: $blue;
+}
 
-  &::placeholder {
-    color: $gray2;
-  }
+.contact-form__input::placeholder,
+.contact-form__select::placeholder,
+.contact-form__textarea::placeholder {
+  color: $gray2;
 }
 
 .contact-form__textarea {
@@ -106,11 +110,19 @@
   display: flex;
   align-items: center;
   font-size: rem(14);
+  font-weight: $medium;
   cursor: pointer;
   position: relative;
   @include mq("md") {
     font-size: rem(16);
   }
+}
+
+.contact-form__checkbox-label::after {
+  content: "*";
+  color: $red;
+  margin-left: rem(4);
+  order: -1; // 擬似要素の前に配置
 }
 
 .contact-form__checkbox {
