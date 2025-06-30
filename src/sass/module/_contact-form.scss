@@ -121,7 +121,6 @@
 .contact-form__checkbox-label::after {
   content: "*";
   color: $red;
-  margin-left: rem(4);
   order: -1; // 擬似要素の前に配置
 }
 
@@ -132,19 +131,6 @@
   height: 0;
   width: 0;
 
-  // チェックボックスの擬似要素
-  & + .contact-form__checkbox-label::before {
-    content: "";
-    display: inline-block;
-    width: rem(17);
-    height: rem(17);
-    border: rem(1) solid $gray5;
-    border-radius: rem(2);
-    margin-right: rem(8);
-    background-color: $white;
-    flex-shrink: 0;
-  }
-
   // チェックされた時のスタイル
   &:checked + .contact-form__checkbox-label::before {
     background-color: $gray5;
@@ -153,6 +139,20 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+}
+
+.contact-form__checkbox +
+.contact-form__checkbox-label::before {
+  content: "";
+  display: inline-block;
+  width: rem(17);
+  height: rem(17);
+  border: rem(1) solid $gray5;
+  border-radius: rem(2);
+  margin-left: rem(3);
+  margin-right: rem(9);
+  background-color: $white;
+  flex-shrink: 0;
 }
 
 .contact-form__button-wrap {
