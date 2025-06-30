@@ -7,9 +7,6 @@
   }
 }
 
-.contact-form__inner {
-}
-
 .contact-form__description {
   font-size: rem(14);
   line-height: calc(32 / 14);
@@ -133,16 +130,15 @@
 
   // チェックされた時のスタイル
   &:checked + .contact-form__checkbox-label::before {
-    background-color: $gray5;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
-    background-size: rem(12) rem(12);
+    background-color: $white;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+    background-size: rem(20) rem(20);
     background-position: center;
     background-repeat: no-repeat;
   }
 }
 
-.contact-form__checkbox +
-.contact-form__checkbox-label::before {
+.contact-form__checkbox + .contact-form__checkbox-label::before {
   content: "";
   display: inline-block;
   width: rem(17);
@@ -167,32 +163,22 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: rem(16) rem(32);
+  padding: rem(12) rem(95);
   background-color: $blue;
   color: $white;
   border: none;
   border-radius: rem(4);
-  font-size: rem(16);
+  font-size: rem(14);
   font-weight: $medium;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: 0.3s;
   @include mq("md") {
     padding: rem(20) rem(40);
     font-size: rem(18);
   }
-
-  &:hover {
-    background-color: darken($blue, 10%);
-  }
 }
 
-.contact-form__button-icon {
-  width: rem(16);
-  height: rem(16);
-  margin-right: rem(8);
-  @include mq("md") {
-    width: rem(18);
-    height: rem(18);
-    margin-right: rem(10);
-  }
+.contact-form__button:hover {
+  background-color: $blue;
+  opacity: 0.8;
 }
