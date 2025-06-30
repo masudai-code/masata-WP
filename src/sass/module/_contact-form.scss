@@ -17,14 +17,14 @@
 }
 
 .contact-form__body {
-  margin-top: rem(40);
+  margin-top: rem(36);
   @include mq("md") {
     margin-top: rem(100);
   }
 }
 
 .contact-form__group:not(:first-child) {
-  margin-top: rem(30);
+  margin-top: rem(29);
   @include mq("md") {
     margin-top: rem(40);
   }
@@ -39,14 +39,13 @@
 // 必須マークの赤色スタイル
 .contact-form__label span:first-of-type {
   color: $red;
-  margin-left: rem(4);
 }
 
 // 補足説明のスタイル
 .contact-form__note {
   display: block;
   font-size: rem(14);
-  margin-top: rem(14);
+  margin-top: rem(10);
   @include mq("md") {
     font-size: rem(13);
     margin-top: rem(6);
@@ -56,7 +55,7 @@
 .contact-form__input,
 .contact-form__select,
 .contact-form__textarea {
-  margin-top: rem(13);
+  margin-top: rem(10.5);
   width: 100%;
   padding: rem(12) rem(15) rem(15) rem(15);
   border: rem(1) solid $gray5;
@@ -101,6 +100,10 @@
   background-repeat: no-repeat;
   background-size: rem(12) rem(6);
   padding-right: rem(40);
+}
+
+.contact-form__privacy {
+  margin-top: rem(25);
 }
 
 .contact-form__checkbox-label {
