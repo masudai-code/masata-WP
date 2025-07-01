@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .contact-confirm {
-  margin: rem(30) 0 rem(80);
+  margin: rem(27) 0 rem(80);
   @include mq("md") {
     margin: rem(57) 0 rem(120);
   }
@@ -21,14 +21,14 @@
 }
 
 .contact-confirm__body {
-  margin-top: rem(43);
+  margin-top: rem(38);
   @include mq("md") {
     margin-top: rem(104);
   }
 }
 
 .contact-confirm__wrap:not(:first-child) {
-  margin-top: rem(30);
+  margin-top: rem(29);
   @include mq("md") {
     margin-top: rem(40);
   }
@@ -75,10 +75,15 @@
   font-weight: $medium;
   border: rem(2) solid $blue;
   border-radius: rem(4);
+  transition: 0.3s;
   @include mq("md") {
     padding: rem(20) rem(200);
     font-size: rem(18);
   }
+}
+
+.contact-confirm__return input:hover {
+  opacity: .8;
 }
 
 .contact-confirm__submit input {
@@ -98,4 +103,8 @@
     padding: rem(20) rem(178);
     font-size: rem(18);
   }
+}
+
+.contact-confirm__submit input:hover {
+  opacity: .8;
 }
