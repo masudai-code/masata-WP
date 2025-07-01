@@ -3,7 +3,7 @@
 .contact-form {
   margin: rem(30) 0 rem(80);
   @include mq("md") {
-    margin: rem(60) 0 rem(120);
+    margin: rem(57) 0 rem(120);
   }
 }
 
@@ -25,14 +25,14 @@
 .contact-form__body {
   margin-top: rem(36);
   @include mq("md") {
-    margin-top: rem(100);
+    margin-top: rem(98);
   }
 }
 
 .contact-form__group:not(:first-child) {
   margin-top: rem(29);
   @include mq("md") {
-    margin-top: rem(40);
+    margin-top: rem(38);
   }
 }
 
@@ -76,7 +76,8 @@
   font-size: rem(14);
   transition: border-color 0.3s;
   @include mq("md") {
-    padding: rem(15) rem(15);
+    margin-top: rem(11.5);
+    padding: rem(13.5);
   }
 }
 
@@ -116,6 +117,9 @@
 
 .contact-form__privacy {
   margin-top: rem(25);
+  @include mq("md") {
+    margin-top: rem(36);
+  }
 }
 
 .contact-form__checkbox-label {
@@ -166,14 +170,14 @@
   margin-right: rem(9);
   background-color: $white;
   flex-shrink: 0;
+  @include mq("md") {
+    margin-left: 0;
+  }
 }
 
 .contact-form__button-wrap {
   text-align: center;
   margin-top: rem(40);
-  @include mq("md") {
-    margin-top: rem(60);
-  }
 }
 
 .contact-form__button {
