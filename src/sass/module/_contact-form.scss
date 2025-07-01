@@ -109,7 +109,7 @@
 .contact-form__select {
   appearance: none;
   background-image: url("../images/common/material-arrow-drop-down.svg");
-  background-position: right rem(12) center;
+  background-position: right rem(14) center;
   background-repeat: no-repeat;
   background-size: rem(12) rem(6);
   padding-right: rem(40);
@@ -167,11 +167,12 @@
   border: rem(1) solid $gray5;
   border-radius: rem(2);
   margin-left: rem(3);
-  margin-right: rem(9);
+  margin-right: rem(10);
   background-color: $white;
   flex-shrink: 0;
   @include mq("md") {
     margin-left: 0;
+    margin-right: rem(9);
   }
 }
 
