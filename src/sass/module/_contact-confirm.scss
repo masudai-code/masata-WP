@@ -1,0 +1,101 @@
+@use "global" as *;
+
+.contact-confirm {
+  margin: rem(30) 0 rem(80);
+  @include mq("md") {
+    margin: rem(57) 0 rem(120);
+  }
+}
+
+.contact-confirm__inner.inner {
+  @include mq("md") {
+    max-width: rem(730);
+  }
+}
+
+.contact-confirm__text {
+  font-size: rem(14);
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+
+.contact-confirm__body {
+  margin-top: rem(43);
+  @include mq("md") {
+    margin-top: rem(104);
+  }
+}
+
+.contact-confirm__wrap:not(:first-child) {
+  margin-top: rem(30);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.contact-confirm__label {
+  font-size: rem(15);
+  font-weight: $medium;
+}
+
+.contact-confirm__label span {
+  color: $red;
+}
+
+.contact-confirm__input,
+.contact-confirm__select,
+.contact-confirm__textarea {
+  margin-top: rem(10);
+  font-size: rem(14);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.contact-confirm__textarea {
+  line-height: calc(32 / 14);
+}
+
+.contact-confirm__btn-wrap {
+  margin-top: rem(40);
+  display: flex;
+  justify-content: center;
+  gap: rem(23);
+  @include mq("md") {
+    gap: rem(80);
+  }
+}
+
+.contact-confirm__return input {
+  padding: rem(9) rem(59.5);
+  color: $blue;
+  display: inline-block;
+  font-size: rem(14);
+  font-weight: $medium;
+  border: rem(2) solid $blue;
+  border-radius: rem(4);
+  @include mq("md") {
+    padding: rem(20) rem(200);
+    font-size: rem(18);
+  }
+}
+
+.contact-confirm__submit input {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: rem(11) rem(47.5);
+  background-color: $blue;
+  color: $white;
+  border: none;
+  border-radius: rem(4);
+  font-size: rem(14);
+  font-weight: $medium;
+  cursor: pointer;
+  transition: 0.3s;
+  @include mq("md") {
+    padding: rem(20) rem(178);
+    font-size: rem(18);
+  }
+}
