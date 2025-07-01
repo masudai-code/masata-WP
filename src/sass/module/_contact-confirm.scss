@@ -23,20 +23,31 @@
 .contact-confirm__body {
   margin-top: rem(38);
   @include mq("md") {
-    margin-top: rem(104);
+    margin-top: rem(100);
+  }
+}
+
+.contact-confirm__wrap {
+  @include mq("md") {
+    display: flex;
+    gap: rem(49);
   }
 }
 
 .contact-confirm__wrap:not(:first-child) {
   margin-top: rem(29);
   @include mq("md") {
-    margin-top: rem(40);
+    margin-top: rem(39.5);
   }
 }
 
 .contact-confirm__label {
   font-size: rem(15);
   font-weight: $medium;
+  @include mq("md") {
+    max-width: rem(143);
+    width: 100%;
+  }
 }
 
 .contact-confirm__label span {
@@ -64,6 +75,7 @@
   gap: rem(23);
   @include mq("md") {
     gap: rem(80);
+    justify-content: flex-start;
   }
 }
 
@@ -77,13 +89,13 @@
   border-radius: rem(4);
   transition: 0.3s;
   @include mq("md") {
-    padding: rem(20) rem(200);
+    padding: rem(17.5) rem(120);
     font-size: rem(18);
   }
 }
 
 .contact-confirm__return input:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .contact-confirm__submit input {
@@ -100,11 +112,11 @@
   cursor: pointer;
   transition: 0.3s;
   @include mq("md") {
-    padding: rem(20) rem(178);
+    padding: rem(19.5) rem(104);
     font-size: rem(18);
   }
 }
 
 .contact-confirm__submit input:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
