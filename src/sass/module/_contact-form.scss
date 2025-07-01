@@ -40,6 +40,11 @@
   display: block;
   font-size: rem(15);
   font-weight: $medium;
+  @include mq("md") {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 // 必須マークの赤色スタイル
@@ -53,8 +58,10 @@
   font-size: rem(14);
   margin-top: rem(10);
   @include mq("md") {
-    font-size: rem(13);
-    margin-top: rem(6);
+    font-size: rem(15);
+    margin-top: 0;
+    margin-left: rem(15);
+    font-weight: $regular;
   }
 }
 
@@ -69,8 +76,7 @@
   font-size: rem(14);
   transition: border-color 0.3s;
   @include mq("md") {
-    padding: rem(16) rem(20);
-    font-size: rem(16);
+    padding: rem(15) rem(15);
   }
 }
 
@@ -120,7 +126,6 @@
   cursor: pointer;
   position: relative;
   @include mq("md") {
-    font-size: rem(16);
   }
 }
 
@@ -128,6 +133,9 @@
   content: "*";
   color: $red;
   order: -1; // 擬似要素の前に配置
+  @include mq("md") {
+    order: 1;
+  }
 }
 
 .contact-form__checkbox {
@@ -182,7 +190,7 @@
   cursor: pointer;
   transition: 0.3s;
   @include mq("md") {
-    padding: rem(20) rem(40);
+    padding: rem(20) rem(178);
     font-size: rem(18);
   }
 }
