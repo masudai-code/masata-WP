@@ -47,6 +47,22 @@
   font-family: $third-font-family;
 }
 
+// SPでContactをcurrent-itemにする
+.common-breadcrumb__inner span:nth-child(3) a {
+  color: $black2;
+  @include mq("md") {
+    color: $gray2;
+  }
+}
+
+// PCでCompleteをcurrent-itemにする
+.common-breadcrumb__inner span:nth-child(8) .current-item {
+  color: $gray2;
+  @include mq("md") {
+    color: $black2;
+  }
+}
+
 // SPで「Confirm」と「Complete」部分を非表示
 .common-breadcrumb__inner span:nth-child(4),
 .common-breadcrumb__inner span:nth-child(5),
