@@ -1,0 +1,99 @@
+@use "global" as *;
+
+.contact-complete {
+  margin: rem(70) 0 rem(80);
+  @include mq("md") {
+    margin: rem(60) 0 rem(120);
+  }
+}
+
+.contact-complete__inner.inner {
+  @include mq("md") {
+    max-width: rem(690);
+  }
+}
+
+.contact-complete__header {
+}
+
+.contact-complete__header-title {
+  font-size: rem(24);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: $second-font-family;
+  @include mq("md") {
+    font-size: rem(40);
+  }
+}
+
+.contact-complete__header-sub {
+  margin-top: rem(10);
+  font-size: rem(14);
+  font-weight: $medium;
+  @include mq("md") {
+    margin-top: rem(20);
+    font-size: rem(18);
+  }
+}
+
+.contact-complete__text-wrap {
+  margin-top: rem(30);
+  @include mq("md") {
+    margin-top: rem(44);
+  }
+}
+
+.contact-complete__text {
+  font-size: rem(14);
+  line-height: calc(32 / 14);
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: calc(38 / 16);
+  }
+}
+
+.contact-complete__top-btn-wrap {
+  margin-top: rem(40);
+  text-align: center;
+}
+
+.contact-complete__top-btn {
+  padding: rem(11.5) rem(95);
+  background-color: $blue;
+  color: $white;
+  border-radius: rem(4);
+  flex-shrink: 0;
+  align-items: center;
+  position: relative;
+  // max-width: rem(285);
+  // width: 100%;
+  transition: opacity 0.3s ease;
+  font-size: rem(14);
+  font-weight: $medium;
+  text-transform: uppercase;
+  @include mq("md") {
+    font-size: rem(18);
+    padding: rem(20) rem(185);
+  }
+}
+
+.contact-complete__top-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: rem(86);
+  width: rem(6);
+  height: rem(6);
+  border-top: rem(1) solid $white;
+  border-right: rem(1) solid $white;
+  transform: translateY(-50%) rotate(-135deg);
+  transition: 0.3s;
+}
+
+.contact-complete__top-btn:hover {
+  opacity: 0.7;
+}
+
+.contact-complete__top-btn:hover::before {
+  left: rem(81);
+}

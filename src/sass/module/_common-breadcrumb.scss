@@ -63,14 +63,10 @@
   }
 }
 
-// SPで「Confirm」と「Complete」部分を非表示
-.common-breadcrumb__inner span:nth-child(4),
-.common-breadcrumb__inner span:nth-child(5),
-.common-breadcrumb__inner span:nth-child(6),
-.common-breadcrumb__inner span:nth-child(7),
-.common-breadcrumb__inner span:nth-child(8) {
+// SPで4つ目以降のスパンを非表示
+.common-breadcrumb__inner span:nth-child(n + 4) {
   display: none;
   @include mq("md") {
-    display: inline;
+    display: inline-block;
   }
 }
