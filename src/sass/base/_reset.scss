@@ -116,3 +116,14 @@ a {
   color: inherit;
   transition: opacity 0.3s;
 }
+
+/* フッターを最下部に配置 */
+.wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}

@@ -59,252 +59,249 @@
   </head>
 
   <body>
-    <!-- ヘッダー-->
-    <header class="header layout-header">
-      <div class="header__inner">
-        <div class="header__logo">
-          <a href="./index.html">
-            <img
-              loading="lazy"
-              src="./assets/images/common/logo01.svg"
-              alt="Excite Code"
-            />
-          </a>
-        </div>
-        <nav class="header__nav u-desktop">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a href="./index.html">top</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="./about.html">about</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="./service.html">service</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="./works.html">works</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="./news.html">news</a>
-            </li>
-            <li class="header__nav-item header__nav-item--contact">
-              <a href="./contact.html"
-                ><i class="fa-regular fa-envelope header__nav-item-icon"></i
-                >contact</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <!-- hamburger -->
-        <button
-          class="header__hamburger js-hamburger u-mobile"
-          aria-label="Toggle navigation menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <!-- ドロワー -->
-        <div class="header__drawer js-drawer u-mobile">
-          <nav class="header__drawer-nav">
-            <ul class="header__drawer-list">
-              <li class="header__drawer-item">
+    <div class="wrap">
+      <!-- ヘッダー-->
+      <header class="header layout-header">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a href="./index.html">
+              <img
+                loading="lazy"
+                src="./assets/images/common/logo01.svg"
+                alt="Excite Code"
+              />
+            </a>
+          </div>
+          <nav class="header__nav u-desktop">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
                 <a href="./index.html">top</a>
               </li>
-              <li class="header__drawer-item">
+              <li class="header__nav-item">
                 <a href="./about.html">about</a>
               </li>
-              <li class="header__drawer-item">
+              <li class="header__nav-item">
                 <a href="./service.html">service</a>
               </li>
-              <li class="header__drawer-item">
+              <li class="header__nav-item">
                 <a href="./works.html">works</a>
               </li>
-              <li class="header__drawer-item">
+              <li class="header__nav-item">
                 <a href="./news.html">news</a>
               </li>
-              <li class="header__drawer-item">
-                <a href="./contact.html">contact</a>
-              </li>
-              <li class="header__drawer-item">
-                <a href="./privacy.html">プライバシーポリシー</a>
+              <li class="header__nav-item header__nav-item--contact">
+                <a href="./contact.html"
+                  ><i class="fa-regular fa-envelope header__nav-item-icon"></i
+                  >contact</a
+                >
               </li>
             </ul>
           </nav>
-          <div class="header__sns-list-wrap">
-            <ul class="header__sns-list">
-              <li class="header__sns-item">
-                <a href="#" aria-label="Facebook"
-                  ><i class="fa-brands fa-facebook"></i
-                ></a>
-              </li>
-              <li class="header__sns-item">
-                <a href="#" aria-label="Twitter"
-                  ><i class="fa-brands fa-twitter"></i
-                ></a>
-              </li>
-              <li class="header__sns-item">
-                <a href="#" aria-label="Instagram"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <!-- sub-FV -->
-      <div class="sub-fv layout-sub-fv">
-        <div class="sub-fv__inner inner">
-          <div class="sub-fv__title">
-            <h1 class="sub-fv__title-main">contact</h1>
-            <p class="sub-fv__title-sub">お問い合わせ</p>
-          </div>
-          <picture class="sub-fv__img">
-            <source
-              srcset="./assets/images/common/contact-PCfv.jpg"
-              media="(min-width: 768px)"
-            />
-            <img
-              src="./assets/images/common/contact-SPfv.jpg"
-              alt="曲がりくねった道路を走行する車の側面とサイドミラーが映し出された動感のある画像"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-      </div>
-
-      <!-- パンくずリスト -->
-      <div class="common-breadcrumb layout-common-breadcrumb">
-        <div class="common-breadcrumb__inner">
-          <span>
-            <a href="./index.html">
-              <span>Top</span>
-            </a>
-          </span>
-          <span class="common-breadcrumb__separator" aria-hidden="true"></span>
-          <span>
-            <a href="./contact.html">
-              <span>Contact</span>
-            </a>
-          </span>
-          <span class="common-breadcrumb__separator" aria-hidden="true"></span>
-          <span>
-            <a href="./contact-confirm.html">
-              <span>Confirm</span>
-            </a>
-          </span>
-          <span class="common-breadcrumb__separator" aria-hidden="true"></span>
-          <span>
-            <span class="current-item">Complete</span>
-          </span>
-        </div>
-      </div>
-
-      <!-- contact-complete -->
-      <div class="contact-complete">
-        <div class="contact-complete__inner inner">
-          <div class="contact-complete__header">
-            <p class="contact-complete__header-title">
-              thank you for contacting us.
-            </p>
-            <p class="contact-complete__header-sub">
-              お問い合わせありがとうございます。
-            </p>
-          </div>
-          <div class="contact-complete__text-wrap">
-            <p class="contact-complete__text">
-              近日中に折り返しご連絡いたします。<br
-                class="u-mobile"
-              />今しばらくお待ちくださいますよう、よろしくお願い申し上げます。<br
-                class="u-mobile"
-              />万が一、ご回答メールが届かない場合は、送信トラブル等の可能性もありますので、大変お手数ではございますが、もう一度フォームよりお問い合わせいただくか、お電話にてお問い合わせをお願いいたします。<br
-                class="u-mobile"
-              />今後ともご愛顧賜りますようよろしくお願い申し上げます。
-            </p>
-          </div>
-          
-          <div class="contact-complete__top-btn-wrap">
-            <a href="./index.html" class="contact-complete__top-btn"
-              >TOPへ戻る</a
-            >
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- footer -->
-    <footer class="footer">
-      <div class="footer__inner">
-        <div class="footer__wrap">
-          <div class="footer__left">
-            <div class="footer__brand">
-              <div class="footer__logo">
-                <a href="#">
-                  <img
-                    src="./assets/images/common/logo02.svg"
-                    alt="Excite Code"
-                  />
-                </a>
-              </div>
-              <div class="footer__sns-list-wrap">
-                <ul class="footer__sns-list">
-                  <li class="footer__sns-item">
-                    <a href="#" aria-label="Facebook"
-                      ><i class="fa-brands fa-facebook"></i
-                    ></a>
-                  </li>
-                  <li class="footer__sns-item">
-                    <a href="#" aria-label="Twitter"
-                      ><i class="fa-brands fa-twitter"></i
-                    ></a>
-                  </li>
-                  <li class="footer__sns-item">
-                    <a href="#" aria-label="Instagram"
-                      ><i class="fa-brands fa-instagram"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <p class="footer__copy">
-              &copy;2022&nbsp;ExciteCode&nbsp;Automobile
-            </p>
-          </div>
-          <div class="footer__right">
-            <nav class="footer__nav">
-              <ul class="footer__nav-list">
-                <li class="footer__nav-item">
+          <!-- hamburger -->
+          <button
+            class="header__hamburger js-hamburger u-mobile"
+            aria-label="Toggle navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <!-- ドロワー -->
+          <div class="header__drawer js-drawer u-mobile">
+            <nav class="header__drawer-nav">
+              <ul class="header__drawer-list">
+                <li class="header__drawer-item">
                   <a href="./index.html">top</a>
                 </li>
-                <li class="footer__nav-item">
+                <li class="header__drawer-item">
                   <a href="./about.html">about</a>
                 </li>
-                <li class="footer__nav-item">
+                <li class="header__drawer-item">
                   <a href="./service.html">service</a>
                 </li>
-                <li class="footer__nav-item">
+                <li class="header__drawer-item">
                   <a href="./works.html">works</a>
                 </li>
-                <li class="footer__nav-item">
+                <li class="header__drawer-item">
                   <a href="./news.html">news</a>
                 </li>
-                <li class="footer__nav-item">
+                <li class="header__drawer-item">
                   <a href="./contact.html">contact</a>
                 </li>
-                <li class="footer__nav-item">
+                <li class="header__drawer-item">
                   <a href="./privacy.html">プライバシーポリシー</a>
                 </li>
               </ul>
             </nav>
+            <div class="header__sns-list-wrap">
+              <ul class="header__sns-list">
+                <li class="header__sns-item">
+                  <a href="#" aria-label="Facebook"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="header__sns-item">
+                  <a href="#" aria-label="Twitter"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="header__sns-item">
+                  <a href="#" aria-label="Instagram"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </header>
+      <main>
+        <!-- sub-FV -->
+        <div class="sub-fv layout-sub-fv">
+          <div class="sub-fv__inner inner">
+            <div class="sub-fv__title">
+              <h1 class="sub-fv__title-main">contact</h1>
+              <p class="sub-fv__title-sub">お問い合わせ</p>
+            </div>
+            <picture class="sub-fv__img">
+              <source
+                srcset="./assets/images/common/contact-PCfv.jpg"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="./assets/images/common/contact-SPfv.jpg"
+                alt="曲がりくねった道路を走行する車の側面とサイドミラーが映し出された動感のある画像"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+        <!-- パンくずリスト -->
+        <div class="common-breadcrumb layout-common-breadcrumb">
+          <div
+            class="common-breadcrumb__inner common-breadcrumb__inner--contact-complete"
+          >
+            <span>
+              <a href="./index.html">
+                <span>Top</span>
+              </a>
+            </span>
+            <span class="common-breadcrumb__separator" aria-hidden="true"></span>
+            <span>
+              <a href="./contact.html">
+                <span>Contact</span>
+              </a>
+            </span>
+            <span class="common-breadcrumb__separator" aria-hidden="true"></span>
+            <span>
+              <a href="./contact-confirm.html">
+                <span>Confirm</span>
+              </a>
+            </span>
+            <span class="common-breadcrumb__separator" aria-hidden="true"></span>
+            <span>
+              <span class="current-item">Complete</span>
+            </span>
+          </div>
+        </div>
+        <!-- contact-complete -->
+        <div class="contact-complete">
+          <div class="contact-complete__inner inner">
+            <div class="contact-complete__header">
+              <p class="contact-complete__header-title">
+                thank you for contacting us.
+              </p>
+              <p class="contact-complete__header-sub">
+                お問い合わせありがとうございます。
+              </p>
+            </div>
+            <div class="contact-complete__text-wrap">
+              <p class="contact-complete__text">
+                近日中に折り返しご連絡いたします。<br
+                  class="u-mobile"
+                />今しばらくお待ちくださいますよう、よろしくお願い申し上げます。<br
+                  class="u-mobile"
+                />万が一、ご回答メールが届かない場合は、送信トラブル等の可能性もありますので、大変お手数ではございますが、もう一度フォームよりお問い合わせいただくか、お電話にてお問い合わせをお願いいたします。<br
+                  class="u-mobile"
+                />今後ともご愛顧賜りますようよろしくお願い申し上げます。
+              </p>
+            </div>
+            <div class="contact-complete__top-btn-wrap">
+              <a href="./index.html" class="contact-complete__top-btn"
+                >TOPへ戻る</a
+              >
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__wrap">
+            <div class="footer__left">
+              <div class="footer__brand">
+                <div class="footer__logo">
+                  <a href="#">
+                    <img
+                      src="./assets/images/common/logo02.svg"
+                      alt="Excite Code"
+                    />
+                  </a>
+                </div>
+                <div class="footer__sns-list-wrap">
+                  <ul class="footer__sns-list">
+                    <li class="footer__sns-item">
+                      <a href="#" aria-label="Facebook"
+                        ><i class="fa-brands fa-facebook"></i
+                      ></a>
+                    </li>
+                    <li class="footer__sns-item">
+                      <a href="#" aria-label="Twitter"
+                        ><i class="fa-brands fa-twitter"></i
+                      ></a>
+                    </li>
+                    <li class="footer__sns-item">
+                      <a href="#" aria-label="Instagram"
+                        ><i class="fa-brands fa-instagram"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="footer__copy">
+                &copy;2022&nbsp;ExciteCode&nbsp;Automobile
+              </p>
+            </div>
+            <div class="footer__right">
+              <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="./index.html">top</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="./about.html">about</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="./service.html">service</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="./works.html">works</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="./news.html">news</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="./contact.html">contact</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="./privacy.html">プライバシーポリシー</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
