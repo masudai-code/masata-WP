@@ -27,7 +27,7 @@
 }
 
 .contact-complete__header-sub {
-  margin-top: rem(10);
+  margin-top: rem(9);
   font-size: rem(14);
   font-weight: $medium;
   @include mq("md") {
@@ -37,7 +37,7 @@
 }
 
 .contact-complete__text-wrap {
-  margin-top: rem(30);
+  margin-top: rem(29);
   @include mq("md") {
     margin-top: rem(44);
   }
@@ -58,22 +58,25 @@
 }
 
 .contact-complete__top-btn {
-  padding: rem(11.5) rem(95);
+  padding: rem(11.5) 0;
+  max-width: rem(275);
+  width: 100%;
+  display: inline-block;
   background-color: $blue;
   color: $white;
   border-radius: rem(4);
-  flex-shrink: 0;
   align-items: center;
   position: relative;
-  // max-width: rem(285);
-  // width: 100%;
   transition: opacity 0.3s ease;
   font-size: rem(14);
   font-weight: $medium;
   text-transform: uppercase;
+  text-align: center;
+  padding-left: rem(15);
   @include mq("md") {
     font-size: rem(18);
     padding: rem(20) rem(185);
+    padding-left: rem(40);
   }
 }
 
@@ -81,7 +84,7 @@
   content: "";
   position: absolute;
   top: 50%;
-  left: rem(86);
+  left: rem(96);
   width: rem(6);
   height: rem(6);
   border-top: rem(1) solid $white;
@@ -95,5 +98,5 @@
 }
 
 .contact-complete__top-btn:hover::before {
-  left: rem(81);
+  left: rem(95);
 }
