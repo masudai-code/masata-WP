@@ -1,0 +1,124 @@
+@use "global" as *;
+
+.error404 {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.error404__inner.inner {
+  padding-left: rem(10);
+  position: relative;
+  @include mq("md") {
+    padding-left: $padding-pc;
+  }
+}
+
+.error404__title-wrap {
+  position: absolute;
+  top: 0;
+  left: rem(10);
+  background-color: $white;
+  padding: rem(29) rem(18) rem(35) rem(18);
+  width: 50.6%;
+  z-index: 2;
+  @include mq("md") {
+    width: 43.6%;
+    padding: rem(41) rem(16) rem(47) rem(50);
+    left: rem(24);
+  }
+}
+
+.error404__title {
+  font-size: rem(44);
+  font-weight: $bold;
+  line-height: 1;
+  font-family: $second-font-family;
+  text-transform: capitalize;
+  @include mq("md") {
+    font-size: rem(100);
+  }
+}
+
+.error404__title-sub {
+  font-size: rem(12);
+  font-weight: bold;
+  margin-top: rem(4);
+  @include mq("md") {
+    font-size: rem(20);
+    margin-top: rem(6);
+  }
+}
+
+.error404__top-btn-wrap {
+  margin-top: rem(40);
+  text-align: center;
+}
+
+.error404__top-btn {
+  padding: rem(11.5) 0;
+  max-width: rem(275);
+  width: 100%;
+  display: inline-block;
+  background-color: $blue;
+  color: $white;
+  border-radius: rem(4);
+  align-items: center;
+  position: relative;
+  transition: opacity 0.3s ease;
+  font-size: rem(14);
+  font-weight: $medium;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: rem(15);
+  @include mq("md") {
+    font-size: rem(18);
+    padding: rem(20) 0;
+    max-width: rem(460);
+    padding-left: 0;
+  }
+}
+
+.error404__top-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: rem(96);
+  width: rem(6);
+  height: rem(6);
+  border-top: rem(1) solid $white;
+  border-right: rem(1) solid $white;
+  transform: translateY(-50%) rotate(-135deg);
+  transition: 0.3s;
+  @include mq("md") {
+    left: rem(171);
+  }
+}
+
+.error404__top-btn:hover {
+  opacity: 0.7;
+}
+
+.error404__top-btn:hover::before {
+  left: rem(95);
+  @include mq("md") {
+    left: rem(166);
+  }
+}
+
+.error404__img {
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  display: block;
+  position: relative;
+  height: rem(280);
+  @include mq("md") {
+    height: rem(514);
+  }
+}
+
+.error404__img img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}

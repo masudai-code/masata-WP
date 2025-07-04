@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+    <!-- meta情報 -->
+    <title>Excite Code</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="icon" href="" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- GSAP CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"
+      defer
+    ></script>
+    <!-- GSAP ScrollTrigger CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/jquery.inview.min.js" defer></script>
+    <script defer src="./assets/js/script.js"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- ヘッダー-->
+      <header class="header layout-header">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a href="./index.html">
+              <img
+                loading="lazy"
+                src="./assets/images/common/logo01.svg"
+                alt="Excite Code"
+              />
+            </a>
+          </div>
+          <nav class="header__nav u-desktop">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="./index.html">top</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="./about.html">about</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="./service.html">service</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="./works.html">works</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="./news.html">news</a>
+              </li>
+              <li class="header__nav-item header__nav-item--contact">
+                <a href="./contact.html"
+                  ><i class="fa-regular fa-envelope header__nav-item-icon"></i
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <!-- hamburger -->
+          <button
+            class="header__hamburger js-hamburger u-mobile"
+            aria-label="Toggle navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <!-- ドロワー -->
+          <div class="header__drawer js-drawer u-mobile">
+            <nav class="header__drawer-nav">
+              <ul class="header__drawer-list">
+                <li class="header__drawer-item">
+                  <a href="./index.html">top</a>
+                </li>
+                <li class="header__drawer-item">
+                  <a href="./about.html">about</a>
+                </li>
+                <li class="header__drawer-item">
+                  <a href="./service.html">service</a>
+                </li>
+                <li class="header__drawer-item">
+                  <a href="./works.html">works</a>
+                </li>
+                <li class="header__drawer-item">
+                  <a href="./news.html">news</a>
+                </li>
+                <li class="header__drawer-item">
+                  <a href="./contact.html">contact</a>
+                </li>
+                <li class="header__drawer-item">
+                  <a href="./privacy.html">プライバシーポリシー</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__sns-list-wrap">
+              <ul class="header__sns-list">
+                <li class="header__sns-item">
+                  <a href="#" aria-label="Facebook"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="header__sns-item">
+                  <a href="#" aria-label="Twitter"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="header__sns-item">
+                  <a href="#" aria-label="Instagram"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <!-- error404 -->
+        <div class="error404 layout-error404">
+          <div class="error404__inner inner">
+            <div class="error404__title-wrap">
+              <h1 class="error404__title">404 Not Found</h1>
+              <p class="error404__title-sub">
+                お探しのページはURLが誤っているか、削除された可能性があります。<br />3秒後にTOPページに遷移します
+              </p>
+              <div class="error404__top-btn-wrap">
+                <a href="./index.html" class="error404__top-btn">TOPへ戻る</a>
+              </div>
+            </div>
+            <picture class="error404__img">
+              <source
+                srcset="./assets/images/common/404-PCfv.jpg"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="./assets/images/common/404-SPfv.jpg"
+                alt="道路沿いに404標識が立つ荒野の風景"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__wrap">
+            <div class="footer__left">
+              <div class="footer__brand">
+                <div class="footer__logo">
+                  <a href="#">
+                    <img
+                      src="./assets/images/common/logo02.svg"
+                      alt="Excite Code"
+                    />
+                  </a>
+                </div>
+                <div class="footer__sns-list-wrap">
+                  <ul class="footer__sns-list">
+                    <li class="footer__sns-item">
+                      <a href="#" aria-label="Facebook"
+                        ><i class="fa-brands fa-facebook"></i
+                      ></a>
+                    </li>
+                    <li class="footer__sns-item">
+                      <a href="#" aria-label="Twitter"
+                        ><i class="fa-brands fa-twitter"></i
+                      ></a>
+                    </li>
+                    <li class="footer__sns-item">
+                      <a href="#" aria-label="Instagram"
+                        ><i class="fa-brands fa-instagram"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="footer__copy">
+                &copy;2022&nbsp;ExciteCode&nbsp;Automobile
+              </p>
+            </div>
+            <div class="footer__right">
+              <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="./index.html">top</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="./about.html">about</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="./service.html">service</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="./works.html">works</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="./news.html">news</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="./contact.html">contact</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="./privacy.html">プライバシーポリシー</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
