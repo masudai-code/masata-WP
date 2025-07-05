@@ -18,9 +18,8 @@
   position: absolute;
   top: 0;
   left: rem(10);
-  background-color: $white;
   padding: rem(29) rem(18) rem(35) rem(18);
-  width: 50.6%;
+  // width: 50.6%;
   z-index: 2;
   @include mq("md") {
     width: 43.6%;
@@ -30,8 +29,9 @@
 }
 
 .error404__title {
-  font-size: rem(44);
+  font-size: rem(35);
   font-weight: $bold;
+  color: $white;
   line-height: 1;
   font-family: $second-font-family;
   text-transform: capitalize;
@@ -40,7 +40,7 @@
   }
 }
 
-.error404__title-sub {
+.error404__text {
   font-size: rem(12);
   font-weight: bold;
   margin-top: rem(4);

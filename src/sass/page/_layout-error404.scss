@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .layout-error404 {
-  margin-top: rem(110);
+  margin: rem(120) 0 rem(80);
   @include mq("md") {
-    margin-top: rem(236);
+    margin: rem(330) 0 rem(120);
   }
 }
