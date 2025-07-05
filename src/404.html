@@ -160,8 +160,21 @@
         <!-- error404 -->
         <div class="error404 layout-error404">
           <div class="error404__inner inner">
-            <div class="error404__title-wrap">
+            <div class="error404__item-wrap">
+              <picture class="error404__img">
+                <source
+                  srcset="./assets/images/common/404-PCfv.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./assets/images/common/404-SPfv.jpg"
+                  alt="道路沿いに404標識が立つ荒野の風景"
+                  loading="lazy"
+                />
+              </picture>
               <h1 class="error404__title">404 Not Found</h1>
+            </div>
+            <div class="error404__content">
               <p class="error404__text">
                 お探しのページはURLが誤っているか、削除された可能性があります。<br />3秒後にTOPページに遷移します
               </p>
@@ -169,17 +182,6 @@
                 <a href="./index.html" class="error404__top-btn">TOPへ戻る</a>
               </div>
             </div>
-            <picture class="error404__img">
-              <source
-                srcset="./assets/images/common/404-PCfv.jpg"
-                media="(min-width: 768px)"
-              />
-              <img
-                src="./assets/images/common/404-SPfv.jpg"
-                alt="道路沿いに404標識が立つ荒野の風景"
-                loading="lazy"
-              />
-            </picture>
           </div>
         </div>
       </main>

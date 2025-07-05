@@ -14,6 +14,10 @@
   }
 }
 
+.error404__item-wrap {
+  position: relative;
+}
+
 .error404__title-wrap {
   position: absolute;
   top: 0;
@@ -29,6 +33,7 @@
 }
 
 .error404__title {
+  position: absolute;
   font-size: rem(35);
   font-weight: $bold;
   color: $white;
@@ -110,7 +115,7 @@
   margin-right: calc(50% - 50vw);
   width: 100vw;
   display: block;
-  position: relative;
+  // position: relative;
   height: rem(280);
   @include mq("md") {
     height: rem(514);
