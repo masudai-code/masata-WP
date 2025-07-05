@@ -23,9 +23,9 @@
   width: 100vw;
   display: block;
   position: relative;
-  aspect-ratio: 365/243;
-  object-fit: cover;
+  height: rem(243);
   @include mq("md") {
+    height: rem(600);
   }
 }
 
@@ -44,6 +44,7 @@
   font-weight: $bold;
   color: $white;
   line-height: 1;
+  margin-left: rem(7);
   font-family: $second-font-family;
   text-transform: capitalize;
   z-index: 2;
@@ -54,14 +55,17 @@
   }
 }
 
-.error404__text {
-  font-size: rem(12);
-  font-weight: bold;
-  margin-top: rem(4);
+.error404__content {
+  margin-top: rem(40);
+  margin-left: rem(8);
   @include mq("md") {
-    font-size: rem(20);
-    margin-top: rem(6);
+    display: none;
   }
+}
+
+.error404__text {
+  font-size: rem(14);
+  line-height: calc(32 / 14);
 }
 
 .error404__top-btn-wrap {
@@ -70,12 +74,12 @@
 }
 
 .error404__top-btn {
-  padding: rem(11.5) 0;
-  max-width: rem(275);
+  padding: rem(10.5) 0;
+  max-width: rem(145);
   width: 100%;
   display: inline-block;
-  background-color: $blue;
-  color: $white;
+  border: rem(1) solid $blue;
+  color: $blue;
   border-radius: rem(4);
   align-items: center;
   position: relative;
@@ -97,11 +101,11 @@
   content: "";
   position: absolute;
   top: 50%;
-  left: rem(96);
+  left: rem(31);
   width: rem(6);
   height: rem(6);
-  border-top: rem(1) solid $white;
-  border-right: rem(1) solid $white;
+  border-top: rem(1) solid $blue;
+  border-right: rem(1) solid $blue;
   transform: translateY(-50%) rotate(-135deg);
   transition: 0.3s;
   @include mq("md") {
@@ -114,7 +118,7 @@
 }
 
 .error404__top-btn:hover::before {
-  left: rem(95);
+  left: rem(26);
   @include mq("md") {
     left: rem(166);
   }
