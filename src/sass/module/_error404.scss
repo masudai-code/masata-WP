@@ -131,69 +131,73 @@
   @include mq("md") {
     display: block;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 60.5%;
+    left: 73.6%;
     transform: translate(-50%, -50%);
+    max-width: rem(509);
+    width: 100%;
   }
 }
 
 .error404__text-pc {
-  font-size: rem(14);
-  line-height: calc(32 / 14);
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: calc(38 / 16);
+    font-weight: $medium;
+    color: $white;
+  }
 }
 
 .error404__top-btn-wrap-pc {
-  margin-top: rem(40);
-  text-align: center;
+  @include mq("md") {
+    margin-top: rem(20);
+    text-align: left;
+  }
 }
 
 .error404__top-btn-pc {
-  padding: rem(10.5) 0;
-  max-width: rem(145);
-  width: 100%;
-  display: inline-block;
-  border: rem(1) solid $blue;
-  color: $blue;
-  border-radius: rem(4);
-  align-items: center;
-  position: relative;
-  transition: opacity 0.3s ease;
-  font-size: rem(14);
-  font-weight: $medium;
-  text-transform: uppercase;
-  text-align: center;
-  padding-left: rem(15);
   @include mq("md") {
-    font-size: rem(18);
-    padding: rem(20) 0;
-    max-width: rem(460);
-    padding-left: 0;
+    display: inline-block;
+    border: rem(1) solid $white;
+    color: $white;
+    border-radius: rem(4);
+    align-items: center;
+    position: relative;
+    transition: opacity 0.3s ease;
+    font-size: rem(14);
+    font-weight: $medium;
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: rem(15);
+    padding: rem(10.5) 0;
+    max-width: rem(145);
+    width: 100%;
   }
 }
 
 .error404__top-btn-pc::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: rem(31);
-  width: rem(6);
-  height: rem(6);
-  border-top: rem(1) solid $blue;
-  border-right: rem(1) solid $blue;
-  transform: translateY(-50%) rotate(-135deg);
-  transition: 0.3s;
   @include mq("md") {
-    left: rem(171);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: rem(30);
+    width: rem(6);
+    height: rem(6);
+    border-top: rem(1) solid $white;
+    border-right: rem(1) solid $white;
+    transform: translateY(-50%) rotate(-135deg);
+    transition: 0.3s;
   }
 }
 
 .error404__top-btn-pc:hover {
-  opacity: 0.7;
+  @include mq("md") {
+    opacity: 0.7;
+  }
 }
 
 .error404__top-btn-pc:hover::before {
-  left: rem(26);
   @include mq("md") {
-    left: rem(166);
+    left: rem(25);
   }
 }
