@@ -48,6 +48,7 @@
 
 .fv__img {
   width: 100%;
+  display: block;
 }
 
 .fv-swiper .swiper-slide img {
@@ -65,7 +66,7 @@
 }
 
 .fv__title {
-  margin: rem(20) rem(10) 0;
+  margin: rem(12) rem(10) 0;
   @include mq("md") {
     margin: rem(196) 0 0 0;
   }

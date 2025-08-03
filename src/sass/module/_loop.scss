@@ -13,7 +13,7 @@
   display: flex;
   width: max-content;
   animation: loopText 20s linear infinite;
-  margin-top: rem(49);
+  margin-top: rem(40);
   @include mq("md") {
     margin-top: rem(69);
   }
