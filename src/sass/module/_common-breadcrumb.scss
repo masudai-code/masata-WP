@@ -53,12 +53,12 @@
 }
 
 // SPでContactをcurrent-itemにする
-.common-breadcrumb__inner span:nth-child(3) a {
-  color: $black2;
-  @include mq("md") {
-    color: $gray2;
-  }
-}
+// .common-breadcrumb__inner span:nth-child(3) a {
+//   color: $black2;
+//   @include mq("md") {
+//     color: $gray2;
+//   }
+// }
 
 // PCでCompleteをcurrent-itemにする
 .common-breadcrumb__inner span:nth-child(8) .current-item {
@@ -69,7 +69,7 @@
 }
 
 // SPで4つ目以降のスパンを非表示
-.common-breadcrumb__inner span:nth-child(n + 4) {
+.common-breadcrumb__inner span:nth-child(n + 6) {
   display: none;
   @include mq("md") {
     display: inline-block;
