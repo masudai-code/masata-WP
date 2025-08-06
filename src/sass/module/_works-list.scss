@@ -16,7 +16,7 @@
   }
 }
 
-.works-list__item--sub {
+.works-list__item.works-list__item--sub {
   padding-bottom: rem(17.5);
   @include mq("md") {
     padding-bottom: rem(30);
@@ -37,11 +37,11 @@
   }
 }
 
-.works-list__item-image--sub {
+.works-list__item-image--detail {
   width: 100%;
   margin-top: rem(34);
   @include mq("md") {
-    width:  100%;
+    width: 100%;
     margin-top: rem(40);
   }
 }
@@ -57,6 +57,13 @@
 }
 
 .works-list__item-image--sub img {
+  aspect-ratio: 130/100;
+  @include mq("md") {
+    aspect-ratio: 160/160;
+  }
+}
+
+.works-list__item-image--detail img {
   aspect-ratio: 315/176;
   @include mq("md") {
     aspect-ratio: 840/471;
