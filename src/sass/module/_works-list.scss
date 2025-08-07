@@ -151,7 +151,8 @@
   font-size: rem(18);
   font-weight: $medium;
   line-height: calc(30 / 18);
-  margin-top: rem(10);
+  margin-top: rem(11);
+  display: block;
   @include mq("md") {
     font-size: rem(26);
     margin-top: rem(18);
@@ -193,4 +194,8 @@
   @include mq("md") {
     font-size: rem(11);
   }
+}
+
+.works-list__item-category--detail {
+  margin-bottom: 0;
 }
