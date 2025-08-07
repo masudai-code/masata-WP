@@ -37,6 +37,13 @@
   }
 }
 
+.works-list__item-image--sub {
+  width: calc(calc(130 / 295) * 100%);
+  @include mq("md") {
+    width: calc(calc(160 / 776) * 100%);
+  }
+}
+
 .works-list__item-image--detail {
   width: 100%;
   margin-top: rem(34);
@@ -107,10 +114,10 @@
 }
 
 .works-list__item-category--sub {
-  margin-bottom: 0;
+  margin-bottom:  rem(10);
   @include mq("md") {
     padding: rem(6) rem(18);
-    margin-bottom: 0;
+    margin-bottom:  rem(30);
   }
 }
 
@@ -135,9 +142,8 @@
   @include mq("md") {
     font-size: rem(18);
     line-height: calc(32 / 18);
-    width: 30em;
     word-wrap: break-word;
-    display: block;
+    display: inline;
   }
 }
 
