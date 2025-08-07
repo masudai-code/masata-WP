@@ -53,6 +53,12 @@
   }
 }
 
+.works-list__item-category.works-list__item-category--detail {
+  @include mq("md") {
+    padding: rem(6.5) rem(18);
+  }
+}
+
 .works-list__item-image img {
   width: 100%;
   aspect-ratio: 120/90;
@@ -114,10 +120,10 @@
 }
 
 .works-list__item-category--sub {
-  margin-bottom:  rem(10);
+  margin-bottom: rem(10);
   @include mq("md") {
     padding: rem(6) rem(18);
-    margin-bottom:  rem(30);
+    margin-bottom: rem(30);
   }
 }
 
@@ -196,6 +202,15 @@
   }
 }
 
+.works-list__item-date--detail {
+  @include mq("md") {
+    font-size: rem(11);
+  }
+}
+
 .works-list__item-category--detail {
   margin-bottom: 0;
+  @include mq("md") {
+    margin-bottom: 0;
+  }
 }
