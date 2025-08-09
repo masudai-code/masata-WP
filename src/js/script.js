@@ -166,18 +166,6 @@ jQuery(function ($) {
       truncateWorksTitle();
     });
 
-    // // sub-works-list__item-titleの文字数を48文字に制限
-    // document
-    //   .querySelectorAll(".sub-works-list__item-title")
-    //   .forEach(function (el) {
-    //     const text = el.textContent;
-    //     const isPc = window.matchMedia("(min-width: 768px)").matches;
-    //     const maxLength = isPc ? 92 : 51;
-    //     if (text.length > maxLength) {
-    //       el.textContent = text.slice(0, maxLength) + "...";
-    //     }
-    //   });
-
     // プラグインを登録
     gsap.registerPlugin(ScrollTrigger);
 
