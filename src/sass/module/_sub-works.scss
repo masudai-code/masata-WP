@@ -81,11 +81,8 @@
 
 .sub-works__btn {
   display: flex;
-  padding-left: rem(18);
-  @include mq("md") {
-    justify-content: center;
-    padding-left: 0;
-  }
+  padding-left: rem(5);
+  justify-content: center;
 }
 
 .sub-works-btn__prev {
