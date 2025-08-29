@@ -134,7 +134,12 @@ jQuery(function ($) {
       document
         .querySelectorAll(".works-list__item-title--sub")
         .forEach(function (el) {
-          const text = el.textContent;
+          // 元のテキストを保存（初回のみ）
+          if (!el.dataset.originalText) {
+            el.dataset.originalText = el.textContent;
+          }
+
+          const text = el.dataset.originalText;
           const isPc = window.matchMedia("(min-width: 768px)").matches;
 
           if (isPc) {
@@ -148,11 +153,17 @@ jQuery(function ($) {
               const firstLine = text.slice(0, 35);
               const secondLine = text.slice(35);
               el.textContent = firstLine + "\n" + secondLine;
+            } else {
+              // 35文字以下の場合：そのまま表示
+              el.textContent = text;
             }
           } else {
             // スマートフォン表示時：51文字で点々
             if (text.length > 51) {
               el.textContent = text.slice(0, 51) + "...";
+            } else {
+              // 51文字以下の場合：そのまま表示
+              el.textContent = text;
             }
           }
         });
