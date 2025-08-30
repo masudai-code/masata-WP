@@ -56,12 +56,12 @@
 .contact-form__note {
   display: block;
   font-size: rem(14);
+  font-weight: $regular;
   margin-top: rem(10);
   @include mq("md") {
     font-size: rem(15);
     margin-top: 0;
     margin-left: rem(15);
-    font-weight: $regular;
   }
 }
 
