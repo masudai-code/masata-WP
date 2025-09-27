@@ -129,8 +129,6 @@
   font-weight: $medium;
   cursor: pointer;
   position: relative;
-  @include mq("md") {
-  }
 }
 
 .contact-form__checkbox-label::after {

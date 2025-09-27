@@ -15,7 +15,7 @@
 
 .contact-complete__header-title {
   font-size: rem(24);
-  font-weight: bold;
+  font-weight: $bold;
   text-transform: uppercase;
   font-family: $second-font-family;
   @include mq("md") {
