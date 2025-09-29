@@ -134,10 +134,6 @@
 .contact-form__checkbox-label::after {
   content: "*";
   color: $red;
-  order: -1; // 擬似要素の前に配置
-  @include mq("md") {
-    order: 1;
-  }
 }
 
 .contact-form__checkbox {
